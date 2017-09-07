@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>黄小花老师的教师工作室</title>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/teacherList.css"/>
+		<script src="../js/teacherList.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+	</head>
+	<body data-spy="scroll" data-target=".sectionLeft" offset="40">
+		<!--第一导航条-->
+		<nav>
+			<ul class="nav-ul">
+				<li><img src="../image/image1/wechat.png"><a href="#" style="margin-top:-10px;">微信矩阵群</a></li>
+				<li><img src="../image/image1/mobile.png"><a href="#" id="mobileApp">手机学习APP <img src="../image/image1/pointDown.png"></a><img src="../image/image1/app_ewm.png" id="app"></li>
+				<li><img src="../image/image1/telephone.png"><a href="#" >客服：4000-176-333</a><span>|</span><a href="#" id="permitA">办学许可证 <img src="../image/image1/pointDown.png"></a>
+					<ul id="ulPermit">
+						<li><a href="#">办学许可证：111010873931661</a></li>
+						<li><a href="#">电信与信息服务业务经营许可证：京ICP证150105号</a></li>
+						<li><a href="#">京ICP备14035240号-2</a></li>
+						<li><a href="#">京公网安备11010802016334号</a></li>
+					</ul>
+				</li>
+				<li style="margin-left:70px;" class="right"><input type="button" name="" value="登录" class="btn1"><input type="button" name="" value="注册" class="btn1"></li>
+				<li class="right"><a href="#">个人中心</a></li>
+				<li class="right"><span>|</span></li>
+				<li class="right"><a href="#">学习计划</a></li>
+				<li class="right"><span>|</span></li>
+				<li class="right"><a href="#">我的课表</a></li>
+				<li class="right"><span>|</span></li>
+				<li class="right"><a href="#">新版网站首页</a></li>
+			</ul>
+		</nav>
+		<!--第二导航条-->
+		<div style="width:100%;height:100px;">
+			<div id="nav2" >
+				<img src="../image/image1/logo.png">
+				<img src="../image/image1/logo.gif" class="logo2">
+				<form>	
+					<input type="text" name="" placeholder="请输入您要搜索的课程或老师姓名" id="searchText">
+					<button id="btnSearch">搜索</button>
+					<ul id="ulSearch">
+						<li><a href="#"><div class="icons" style="background: rgb(245,14,133);">1</div><div class="items">数学</div></a></li>
+						<li><a href="#"><div class="icons" style="background: rgb(252,188,75);">2</div><div class="items">语文</div></a></li>
+						<li><a href="#"><div class="icons" style="background: rgb(161,217,88);">3</div><div class="items">英语</div></a></li>
+						<li><a href="#"><div class="icons">4</div><div class="items">物理</div></a></li>
+						<li><a href="#"><div class="icons">5</div><div class="items">初中</div></a></li>
+						<li><a href="#"><div class="icons">6</div><div class="items">高中</div></a></li>
+						<li><a href="#"><div class="icons">7</div><div class="items">小学</div></a></li>
+						<li><a href="#"><div class="icons">8</div><div class="items">化学</div></a></li>
+						<li><a href="#"><div class="icons">9</div><div class="items">高一</div></a></li>
+						<li><a href="#"><div class="icons">10</div><div class="items">历史</div></a></li>
+					</ul>
+					<a href="#" class="logos"><img src="../image/image1/zhifudanbao.png"><br /><span>支付担保</span></a>
+				<a href="#" class="logos"><img src="../image/image1/suishituikuan.png"><br /><span>随时退款</span></a>
+				<a href="#" class="logos"><img src="../image/image1/guanfangrenzheng.png"><br /><span>官方认证</span></a>
+				</form>
+				
+			</div>
+		</div>
+		
+		<div id="section1">
+			<div id="section_div1"style="width:200px;height:500px;font-size:18px;z-index:8;position: relative;">
+				<ul id="section1_u1" style="height:50px;overflow:hidden;">
+					<li id="section1_u1_l" style="width:200px;height:50px;line-height:50px;background:rgb(69,176,53);color:white;padding-left:12px;">
+						找老师
+					</li>
+					<li id="section1_u1_l1">
+						<ul id="section1_u2">
+							<li>
+							  <table>
+								<tr>
+									<td>高考</td>
+								</tr>
+								<tr>
+									<td>数学</td>
+									<td>语文</td>
+									<td>英语</td>
+									<td>物理</td>
+								</tr>
+							  </table>	 
+							</li>
+							<li id="section1_l1" style="width:450px;height: 452px;background:white;margin-left: 200px;margin-top:-76px;border:1px solid #CCCCCC;opacity: 1;">
+									<span>高考</span>
+									<table id="section1_tab2">
+										<tr>
+											<td>语文</td>
+											<td>数学</td>
+											<td>英语</td>
+											<td>物理</td>
+											<td>化学</td>
+											<td>生物</td>
+										</tr>
+										<tr>
+											<td>历史</td>
+											<td>地理</td>
+											<td>政治</td>
+										</tr>
+									</table>
+							</li>
+						</ul>	
+					</li>
+					<li id="section1_u1_l2">
+						<ul>
+							<li>
+								<table>
+									<tr>
+										<td>高中</td>
+									</tr>
+									<tr>
+										<td>数学</td>
+										<td>语文</td>
+										<td>英语</td>
+										<td>物理</td>
+									</tr>
+								</table>
+							</li>
+							<li id="section1_l2" style="width:450px;height: 452px;background:white;margin-left: 200px;margin-top:-151px;border:1px solid #CCCCCC;opacity: 1;">								
+									<table id="section1_u3">
+										<tr>
+											<td style="color:rgb(238,97,0);font-size:17px;padding-right: 25px;border-right: 2px solid rgb(221,221,221);">高三</td>
+											<td >语文</td>
+											<td>数学</td>
+											<td>英语</td>
+											<td>物理</td>
+											<td>化学</td>
+											<td>生物</td>
+										</tr>
+										<tr>
+											<td></td>
+											<td>历史</td>
+											<td>地理</td>
+											<td>政治</td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td style="color:rgb(238,97,0);font-size:17px;padding-right: 25px;border-right: 2px solid rgb(221,221,221);">高二</td>
+											<td>语文</td>
+											<td>数学</td>
+											<td>英语</td>
+											<td>物理</td>
+											<td>化学</td>
+											<td>生物</td>
+										</tr>
+										<tr>
+											<td></td>
+											<td>历史</td>
+											<td>地理</td>
+											<td>政治</td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td style="color:rgb(238,97,0);font-size:17px;padding-right: 25px;border-right: 2px solid rgb(221,221,221);">高一</td>
+											<td>语文</td>
+											<td>数学</td>
+											<td>英语</td>
+											<td>物理</td>
+											<td>化学</td>
+											<td>生物</td>
+										</tr>
+										<tr>
+											<td></td>
+											<td>历史</td>
+											<td>地理</td>
+											<td>政治</td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+									</table>
+							</li>
+						</ul>
+					</li>
+					<li id="section1_u1_l3">
+						<ul>
+							<li>
+								<table>
+									<tr>
+										<td>中考</td>
+									</tr>
+									<tr>
+										<td>数学</td>
+										<td>语文</td>
+										<td>英语</td>
+										<td>物理</td>
+									</tr>
+								</table>
+							</li>
+							<li id="section1_l3" style="width:450px;height: 452px;background:white;margin-left: 200px;margin-top:-226px;border:1px solid #CCCCCC;opacity: 1;">
+								<table id="section1_tab3">
+									<tr>
+										<td style="padding-right:15px;font-size: 17px;color:rgb(238,97,0);border-right: 2px solid rgb(221,221,221);">初中</td>
+										<td>语文</td>
+										<td>数学</td>
+										<td>英语</td>
+										<td>物理</td>
+										<td>化学</td>
+										<td>历史</td>
+									</tr>
+								</table>
+							</li>
+						</ul>
+						
+					</li>
+					<li id="section1_u1_l4">
+						<ul>
+							<li>
+								<table>
+									<tr>
+										<td>初中</td>
+									</tr>
+									<tr>
+										<td>数学</td>
+										<td>语文</td>
+										<td>英语</td>
+										<td>物理</td>
+									</tr>
+								</table>
+							</li>
+							<li id="section1_l4" style="width:450px;height: 452px;background:white;margin-left: 200px;margin-top:-301px;border:1px solid #CCCCCC;opacity: 1;">
+								<table id="section1_tab4">
+									<tr>
+										<td style="padding-right:15px;font-size: 17px;color:rgb(238,97,0);border-right: 2px solid rgb(221,221,221);">初三</td>
+										<td>语文</td>
+										<td>数学</td>
+										<td>英语</td>
+										<td>物理</td>
+										<td>化学</td>
+										<td>生物</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>历史</td>
+										<td>地理</td>
+										<td>政治</td>
+										<td>科学课</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td style="padding-right:15px;font-size: 17px;color:rgb(238,97,0);border-right: 2px solid rgb(221,221,221);">初二</td>
+										<td>语文</td>
+										<td>数学</td>
+										<td>英语</td>
+										<td>物理</td>
+										<td>化学</td>
+										<td>生物</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>历史</td>
+										<td>地理</td>
+										<td>政治</td>
+										<td>科学课</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td style="padding-right:15px;font-size: 17px;color:rgb(238,97,0);border-right: 2px solid rgb(221,221,221);">初一</td>
+										<td>语文</td>
+										<td>数学</td>
+										<td>英语</td>
+										<td>物理</td>
+										<td>化学</td>
+										<td>生物</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>历史</td>
+										<td>地理</td>
+										<td>政治</td>
+										<td>科学课</td>
+										<td></td>
+										<td></td>
+									</tr>
+								</table>
+							</li>
+						</ul>
+						
+					</li>
+					<li id="section1_u1_l5">
+						<ul>
+							<li>
+								<table>
+									<tr>
+										<td>小学</td>
+									</tr>
+									<tr>
+										<td>数学</td>
+										<td>语文</td>
+										<td>英语</td>
+										<td>阅读</td>
+									</tr>
+								</table>
+							</li>
+							<li id="section1_l5" style="width:450px;height: 452px;background:white;margin-left: 200px;margin-top:-376px;border:1px solid #CCCCCC;opacity: 1;">
+								<table id="section1_tab5">
+									<tr>
+										<td style="padding-right:15px;font-size: 17px;color:rgb(238,97,0);border-right: 2px solid rgb(221,221,221);">小升初</td>
+										<td>语文</td>
+										<td>数学</td>
+										<td>英语</td>
+										<td>新概念</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td colspan="2">剑桥少儿英语</td>
+										<td>奥数</td>
+										<td colspan="2">剑桥终级英语</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>科学课</td>
+									</tr>
+									<tr>
+										<td style="padding-right:15px;font-size: 17px;color:rgb(238,97,0);border-right: 2px solid rgb(221,221,221);">六年级</td>
+										<td>语文</td>
+										<td>数学</td>
+										<td>英语</td>
+										<td>作文</td>
+										<td>阅读</td>
+										<td>奥数</td>
+									</tr>
+									<tr>
+										<td style="padding-right:15px;font-size: 17px;color:rgb(238,97,0);border-right: 2px solid rgb(221,221,221);">五年级</td>
+										<td>语文</td>
+										<td>数学</td>
+										<td>英语</td>
+										<td>作文</td>
+										<td>阅读</td>
+										<td>奥数</td>
+									</tr>
+									<tr>
+										<td style="padding-right:15px;font-size: 17px;color:rgb(238,97,0);border-right: 2px solid rgb(221,221,221);">四年级</td>
+										<td>语文</td>
+										<td>数学</td>
+										<td>英语</td>
+										<td>作文</td>
+										<td>阅读</td>
+										<td>奥数</td>
+									</tr>
+									<tr>
+										<td style="padding-right:15px;font-size: 17px;color:rgb(238,97,0);border-right: 2px solid rgb(221,221,221);">三年级</td>
+										<td>语文</td>
+										<td>数学</td>
+										<td>英语</td>
+										<td>作文</td>
+										<td>阅读</td>
+										<td>奥数</td>
+									</tr>
+									<tr>
+										<td style="padding-right:15px;font-size: 17px;color:rgb(238,97,0);border-right: 2px solid rgb(221,221,221);">二年级</td>
+										<td>语文</td>
+										<td>数学</td>
+										<td>英语</td>
+									</tr>
+									<tr>
+										<td style="padding-right:15px;font-size: 17px;color:rgb(238,97,0);border-right: 2px solid rgb(221,221,221);">一年级</td>
+										<td>语文</td>
+										<td>数学</td>
+										<td>英语</td>
+									</tr>
+								</table>
+							</li>
+						</ul>
+						
+					</li>
+					<li id="section1_u1_l6">
+						<ul>
+							<li>
+									<table>
+										<tr>
+											<td>VIP课程</td>
+										</tr>
+										<tr>
+											<td>国际课程</td>
+											<td>双语课程</td>
+										</tr>
+									</table>
+							</li>
+							<li id="section1_l6" style="width:450px;height: 452px;background:white;margin-left: 200px;margin-top:-451px;border:1px solid #CCCCCC;opacity: 1;">
+								<table id="section1_tab6" >
+									<tr>
+										<td style="font-size: 15px;color:rgb(238,97,0);">国内大学</td>
+										<td>CAP-经济</td>
+										<td colspan="2">CAP-大学语文</td>
+										<td></td>
+										
+										<td></td>
+									</tr>
+									<tr>
+										<td style="font-size: 15px;color:rgb(238,97,0);">先修课程</td>
+										<td colspan="2">CAP-微积分</td>
+										<td colspan="2">CAP-通用学术英语</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td colspan="2">CAP-大学物理-力学</td>
+										<td colspan="2">CAP-大学化学</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td colspan="3">CAP-普通生物学-细胞与分子</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td style="font-size: 15px;color:rgb(238,97,0);">素质课程</td>
+										<td>奥数</td>
+										<td>素质课程</td>
+										<td>书法教育</td>
+										<td>国画教育</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>美术教育</td>
+										<td>其他素质课程</td>
+										<td>心理健康</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>科学课</td>
+									</tr>
+									<tr>
+										<td style="font-size: 15px;color:rgb(238,97,0);">语言课程</td>
+										<td>新概念</td>
+										<td>剑桥少儿英语</td>
+										<td colspan="2">剑桥中极英语</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>语言课程</td>
+									</tr>
+									<tr>
+										<td style="font-size: 15px;color:rgb(238,97,0);">双语课程</td>
+										<td>双语课程</td>
+									</tr>
+									<tr>
+										<td style="font-size: 15px;color:rgb(238,97,0);">国际课程</td>
+										<td>国际课程</td>
+										<td>IGCSE</td>
+									</tr>
+								</table>
+							</li>
+						</ul>
+					
+					</li>
+				</ul>
+			</div>
+			<table id="section1_tab1">
+				<tr>
+					<td><a>首页</a></td>
+					<td><a>智能配课</a></td>
+					<td><a>公开课</a></td>
+					<td><a>教育头条</a></td>
+					<td><a>三好社区</a></td>
+					<td><a>教师帮</a></td>
+					<td><a>客户端下载</a></td>
+					<td><a>APP加载</a></td>
+					<td><a>教师入驻</a></td>
+				</tr>
+			</table>
+		</div>
+		<hr style="color: rgb(227,227,227);width: 100%;margin-top: -1px;position: absolute;  "/>
+		<div style="width: 100%;height: 35px;font-size: 15px;">
+			<div id="navBar" style="width: 1200px;height: 35px;margin: auto;padding: 5px;">
+				<a href="#" style="color:rgb(51,51,51);"><span>首页</span></a><span>&gt;</span>
+				<a href="#" style="color:rgb(51,51,51);;"><span>老师列表页</span></a><span>&gt;</span>
+				<a href="#" style="color:rgb(72,176,61) ;"><span>黄小花的教师工作室</span></a><span>&gt;</span>
+			</div>
+		</div>
+		<div style="width: 100%;height: 395px;background: rgb(233,238,241);">
+			<div id="teacherInfo">
+				<div class="itemDiv">
+					<div style="width: 336px;height: 69px;background: url(../image/image1/title-box.png);margin-top: 20px;margin-left: 20px;">
+						<h2 style="padding-top: 25px;margin-left: 40px;font-weight: 100;">黄小花的教师工作室</h2>						
+					</div>
+
+					<img src="../image/image1/teacherPic.jpg"/ style="width: 100px;height: 100px;border-radius: 50%;margin-top: 40px;margin-left: 20px;">
+					<img src="../image/image1/lv6.png"/ style="margin-left: -35px;margin-top: 110px;">
+					<dl style="margin-top: -80px;margin-left: 180px;">
+						<dt style="font-size: 20px;">黄小花<i style="font-size: 13px;margin-left:10px;margin-top:10px;color: rgb(194,165,165);">（456次浏览）</i></dt>
+						<dd style="margin-top: 10px;">
+							<span style="margin-left: 0px;">小学</span><span>|</span>
+							<span>数学</span><span>|</span>
+							<span>教龄17年</span><span>|</span>
+							<span>广东省</span>
+						</dd>
+					</dl>
+					<p style="font-size:15px;margin-top: 40px;width: 390px;letter-spacing: 2px;line-height:20px;margin-left: 14px;">1999年7月大专院校毕业后一直在公立小学任教，胜任小学1-6年级数学学科</p>
+				</div>
+				<div class="itemDiv">
+					<div style="width: 70px;height: 79px;padding-right: 30px;float: left;margin-top: 0px;margin-left: 10px;">
+						<div class="circle" style="width: 42px;height: 42px;margin-top: 25px;margin-left: 9px;">
+							<img src="../image/image1/identity.png" style="margin-top: 8px;margin-left: 5px;width: 26px;height: 28px;"/>
+						</div>
+						<br /><p style="font-size: 13px; margin-top: -10px; text-align: center;width: 60px;">身份认证</p>
+					</div> 
+					<div style="width: 70px;height: 79px;padding-right: 30px;float: left;margin-top: 0px;margin-left: 20px;">
+						<div class="circle" style="width: 42px;height: 42px;margin-top: 25px;margin-left: 9px;">
+							<img src="../image/image1/xueli.png" style="margin-top: 10px;margin-left: 7px;width: 26px;height: 28px;"/>
+						</div>
+						<br /><p style="font-size: 13px;margin-top: -10px;text-align: center;width: 60px; ">学历认证</p>
+					</div>
+					<div style="width: 70px;height: 79px;padding-right: 30px;float: left;margin-top: 0px;margin-left: 20px;">
+						<div class="circle" style="width: 42px;height: 42px;margin-top: 25px;margin-left: 9px;">
+							<img src="../image/image1/yanjing.png" style="margin-top: 10px;margin-left: 5px;width: 26px;height: 28px;"/>
+						</div>
+						<br /><p style="font-size: 13px;margin-top: -10px;text-align: center;width: 60px; ">教师资格</p>
+					</div>
+					<div style="width: 70px;height: 79px;padding-right: 30px;float: left;margin-top: 0px;margin-left: 20px;">
+						<div class="circle" style="width: 42px;height: 42px;margin-top: 25px;margin-left: 9px;">
+							<img src="../image/image1/star.png" style="margin-top: 10px;margin-left: 6px;"/>
+						</div>
+						<br /><p style="font-size: 13px;margin-top: -10px;text-align: center;width: 60px;">专业资质</p>
+					</div>
+					<div style="width: 390px;height: 50px;margin-top: 75px;margin-left: 10px; " class="mid">
+						<div style="text-align: center;margin-left: 20px;">
+							<span style="margin-top: 0px; color: rgb(255,120,0);font-size: 20px;">508</span><br />
+							<p style="margin-top: 10px;">累计学时</p>
+						</div>
+						<hr style="width: 2px;height: 50px;color: white; margin-top: 20px; "/>
+						<div style="text-align: center;">
+							<span style="margin-top: 0px; color: rgb(255,120,0);font-size: 20px;">36</span><br />
+							<p style="margin-top: 10px;">学生数</p>
+						</div>
+						<hr style="width: 2px;height: 50px;color: rgb(215,215,215);"/>
+						<div style="text-align: center;">
+							<span style="margin-top: 0px; color: rgb(255,120,0);font-size: 20px;">100%</span><br />
+							<p style="margin-top: 10px;">满意度</p>
+						</div>
+						<div  style="width: 390px;">
+							<ul class="commence">
+								<li style="position: relative;">课程评分&nbsp;&nbsp;<hr style="width: 93px;height: 9px;background-color: rgb(255,100,16);border: none;margin-left: 1px;margin-top: 10px;position: absolute;"/><span style="position: absolute;margin-left: 100px;">5.0</span></li>
+								<li>教师评价（已有30人次评价）</li>
+								<li>描述相符：5.0</li>
+								<li>好评数：30</li>
+								<li>教学态度：5.0</li>
+								<li>中评数：0</li>
+								<li>课程质量：5.0</li>
+								<li>差评数：0</li>
+							</ul>
+						</div>
+						<ul style="margin-top: 15px;height: 30px;" class="teacher-ban-center">
+							<li style="position: relative; top: 0px;" class="teacherShare">教师分享
+								<div class="btnBox1" style="display: none; ">
+									<a class="plus">
+										<img src="../image/image1/plus1.png"/>
+										
+									</a>
+									<a href="#"><img src="../image/image1/smallQzone.png"/></a>
+									<a href="#"><img src="../image/image1/smallSina.png"/></a>
+									<a href="#"><img src="../image/image1/smallRenren.png"/></a>
+									<a href="#"><img src="../image/image1/smallTencent.png"/></a>
+									<a class="wechatShare"><img src="../image/image1/smallWechat.png" style="margin-right: 0px;"/></a>
+								</div>
+							</li>
+							<li><a href="#">收藏</a><a href="#">5</a></li>
+							<li>在线咨询</li>
+							<li style="background: transparent;position: relative;width: 150px;text-align: left;margin-left: 290px;margin-top: -20px;padding-top: -20px;"><span class = "btnHover" style="color: rgb(93,201,77);top:1px;background: transparent;position:absolute; font-size: 15px;">客服4000-176-333</span></li>
+						</ul>
+						
+					</div>
+				</div>
+				<div class="itemDiv" style="width: 280px;float: right;background: rgb(179,184,188);">
+					<ul class="teacher-ban-center-par3">
+						<li>六年级数学课时包<span>￥100.00/小时</span></li>
+						<li>三年级数学课时包<span>￥135.00/小时</span></li>
+					</ul>
+					<div style="width: 280px;height: 62px;border-bottom: 1px dotted rgb(190,190,190);margin-top: 130px; ">
+						<span style="margin-top: 20px;display: inline-block;margin-left: 15px;">选择课时</span>
+						<div style=" width: 160px;height: 41px;margin-left: 100px;margin-top: -30px;">
+							<div class="cal" id="classHour" style="width: 70px;height: 40px;border: 1px solid rgb(238,238,238);text-align: center;padding-top: 10px; ">6</div>
+							<div class="cal" style="width: 20px;height: 40px;margin-left: 0px;margin-top: 0px;">
+								<input class="calcu" value="+" type="button"/>
+								<input class="calcu" value="-" type="button"/>
+							</div>
+						</div>
+						<button class="buy">立即购买</button>
+						<button class="buy" style="background: transparent;">加入购物车</button>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	
+		<!--中间部分-->
+		<section style="width: 100%;height: 2146px;">
+			<div style="width: 1200px;height: 2146px;margin: auto;">
+				<div style="width: 900px;height: 2176px;top: 0px;left: 0px;">
+					<div class = "sectionLeft">
+						<ul class = "nav nav-tabs">
+							<li><a href="#h1">教师风采</a></li>
+							<li><a href="#h2">成功案例</a></li>
+							<li><a href="#h3">工作经历</a></li>
+							<li><a href="#h4">服务保障</a></li>
+							<li><a href="#h5">课程评价</a></li>
+						</ul>	
+					</div>
+
+					<h4 id="h1" style="padding-top: 10px;height: 40px;">授课风格</h4>
+					<dl style="margin-top: 20px;">
+						<dt>
+							<span style="width: 5px;height: 15px;background-color: rgb(255,120,0);display: inline-block;margin-top: 10px;margin-left: 20px;"></span>
+							<span style="display: inline-block;font-size: 15px;font-weight: lighter;">教师风格：</span>
+						</dt>
+						<dd style="margin-top: -20px;margin-left: 100px;">
+							<span class="features1">亦师亦友型</span>
+							<span class="features1">理性思维型</span>
+							<span class="features1">细致监督型</span>
+							<span class="features1">专业系统型</span>
+						</dd>
+					</dl>
+					<dl style="margin-bottom: 40px;">
+						<dt>
+							<span style="width: 5px;height: 15px;background-color: rgb(0,197,239);display: inline-block;margin-top: 10px;margin-left: 20px;"></span>
+							<span style="display: inline-block;font-size: 15px;font-weight: lighter;">擅教学生：</span>
+						</dt>
+						<dd style="margin-top: -20px;margin-left: 100px;">
+							<span class="features2">积极配合型</span>
+							<span class="features2">思考探究型</span>
+							<span class="features2">缺乏信心型</span>
+							<span class="features2">欠缺方法型</span>
+						</dd>
+					</dl>
+					<h4 id="h2">成功案例</h4>
+					<!--<span style="width: 1px;height: 165px;background: rgb(238,238,238);margin-top: 0px;margin-left: 45px;"></span>-->
+					<dl style="width: 855px;margin-left: 45px;line-height: 30px;margin-top: 30px;margin-bottom: 40px;">
+						<dt style="color: rgb(255,120,0);font-size: 16px;font-weight: lighter;">2015年10月</dt>
+						<dd style="line-height: 25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;张某林同学是五年级学生，刚转到我班时，发现他学习态度不端正，数学答题不规范，第一次月考的数学成绩只有48分。经过我的辅导，他对数学产生了兴趣，解题逐渐规范了，思维也活跃了，成绩条很快，第二次月考数学考了80分。</dd>
+					</dl>
+					<h4 id="h3">工作经历</h4>
+					<dl style="width: 855px;margin-left: 45px;line-height: 30px;margin-top: 30px;margin-bottom: 40px;">
+						<dt style="color: rgb(255,120,0);font-size: 16px;font-weight: lighter;">1999年06月 - 2016年05月</dt>
+						<dd style="line-height: 25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;师范院校毕业后一直在公立学校任教，胜任小学1-6年级数学科，所教班级成绩显著。利用业余时间进行一对一的辅导。</dd>
+					</dl>
+					<h4 id="h4">服务保障</h4>
+					<h2 style="text-align: center;margin-top: 40px;">“七维一体”深度服务保障体系</h2>
+					<ul style="margin-top: 40px;width: 900px;height: 100px;list-style: none;margin-left: 25px;">
+						<li style="width: 100px;height: 100px;border: 1px solid rgb(255,100,16);display: inline-block;text-align: center;font-size: 18px;font-weight: bold;padding-top: 15px;color: rgb(255,100,16);border-radius: 6px;margin-left: 20px;">
+							<span style="margin-top: 20px;font-size: 13px;">一套</span>
+							<br />个性化<br />学习方案
+						</li>
+						<li style="width: 100px;height: 100px;border: 1px solid rgb(255,100,16);display: inline-block;text-align: center;font-size: 18px;font-weight: bold;padding-top: 15px;color: rgb(255,100,16);border-radius: 6px;margin-left: 20px;">
+							<span style="margin-top: 20px;font-size: 13px;">一套</span>
+							<br />P.G.O.T<br />学习系统
+						</li>
+						<li style="width: 100px;height: 100px;border: 1px solid rgb(255,100,16);display: inline-block;text-align: center;font-size: 18px;font-weight: bold;padding-top: 15px;color: rgb(255,100,16);border-radius: 6px;margin-left: 20px;">
+							<span style="margin-top: 20px;font-size: 13px;">一款</span>
+							<br />家长旁听<br />支持软件
+						</li>
+						<li style="width: 100px;height: 100px;border: 1px solid rgb(255,100,16);display: inline-block;text-align: center;font-size: 18px;font-weight: bold;padding-top: 15px;color: rgb(255,100,16);border-radius: 6px;margin-left: 20px;">
+							<span style="margin-top: 20px;font-size: 13px;">一位	</span>
+							<br />课程顾问<br />&nbsp;&nbsp;
+						</li>
+						<li style="width: 100px;height: 100px;border: 1px solid rgb(255,100,16);display: inline-block;text-align: center;font-size: 18px;font-weight: bold;padding-top: 15px;color: rgb(255,100,16);border-radius: 6px;margin-left: 20px;">
+							<span style="margin-top: 20px;font-size: 13px;">一位</span>
+							<br />学习管理师<br />&nbsp;&nbsp;
+						</li>
+						<li style="width: 100px;height: 100px;border: 1px solid rgb(255,100,16);display: inline-block;text-align: center;font-size: 18px;font-weight: bold;padding-top: 15px;color: rgb(255,100,16);border-radius: 6px;margin-left: 20px;">
+							<span style="margin-top: 20px;font-size: 13px;">一位</span>
+							<br />专业老师<br />&nbsp;&nbsp;
+						</li>
+						<li style="width: 100px;height: 100px;border: 1px solid rgb(255,100,16);display: inline-block;text-align: center;font-size: 18px;font-weight: bold;padding-top: 15px;color: rgb(255,100,16);border-radius: 6px;margin-left: 20px;">
+							<span style="margin-top: 20px;font-size: 13px;">一位</span>
+							<br />技术服务<br />保障人员
+						</li>
+					</ul>
+					<h2 style="text-align: center;margin-top: 40px;">10年个性化基础教育服务经验</h2>
+					<h4 style="text-align: center;margin-top: 10px;line-height: 25px;color: rgb(123,123,123);">每一位孩子都是独特的<br />他的成功，需要个性化的辅导和强大的保障服务</h4>
+					<div style="width: 436px;height: 112px;margin: auto;margin-top: 20px;">
+						<div style="width: 112px;height: 112px;border-radius: 50%;background: rgb(77,136,217);margin-right: 40px;text-align: center;font-size: 18px;color:white;padding-top: 47px;display: inline-block;">高效</div>
+						<div style="width: 112px;height: 112px;border-radius: 50%;background: rgb(77,136,217);margin-right: 40px;text-align: center;font-size: 18px;color:white;padding-top: 47px;display: inline-block;">实时</div>
+						<div style="width: 112px;height: 112px;border-radius: 50%;background: rgb(77,136,217);text-align: center;font-size: 18px;color:white;padding-top: 47px;display: inline-block;">专业</div>
+					</div>
+					<h2 style="text-align: center;margin-top: 30px;margin-bottom: 70px;">让我们的教育变得更有温度</h2>
+
+					<h4 id="h5" style="background: rgb(248,248,248);padding-top: 15px;height: 50px;">课程评价</h4>
+					<div style="width: 900px;height: 934px;background: rgb(248,248,248);margin-top: -10px;padding: 20px;">
+						<div style="width: 868px;height: 87px;background: white;padding-top: 35px;" class="labels">
+							<span>全部标签</span>
+							<span>幽默</span>
+							<span>犀利</span>
+							<span>智慧</span>
+							<span>负责</span>
+							<span>因材施教</span>
+							<span>内容新颖</span>
+							<span>通俗易懂</span>
+							<span>实力派</span>
+							<span>提分快</span>
+						</div>
+						<ul style="width: 868px;height: 934px;list-style: none;margin-top: 10px;" class="eva">
+							<li style="width: 860px;height: 122px;border-left: 5px solid rgb(238,238,238);">
+								<img src="../image/image1/default.png" style="width: 80px;height: 80px;margin-left: 0px;"/>
+								<div style="width: 725px;height: 31px;border-bottom: 1px solid rgb(238,238,238);margin-left: 100px;margin-top: -60px;">
+									<span >评分：</span>
+									<span style="margin-left: 100px;">描述相符：5.0 教学态度：5.0 课程质量：5.0</span>
+									<span style="float: right;">2016-08-21 三年级数学</span>
+								</div>
+								<p style="margin-left: 100px;margin-top: 10px;">老师很有耐心，讲解的特别详细，唯一的不足就是老师的普通话有点不太好，我家孩子有点听不懂</p>
+							</li>
+							<li style="width: 860px;height: 122px;border-left: 5px solid rgb(238,238,238);">
+								<img src="../image/image1/default.png" style="width: 80px;height: 80px;margin-left: 0px;"/>
+								<div style="width: 725px;height: 31px;border-bottom: 1px solid rgb(238,238,238);margin-left: 100px;margin-top: -60px;">
+									<span >评分：</span>
+									<span style="margin-left: 100px;">描述相符：5.0 教学态度：5.0 课程质量：5.0</span>
+									<span style="float: right;">2016-08-21 三年级数学</span>
+								</div>
+								<p style="margin-left: 100px;margin-top: 10px;">老师很有耐心，讲解的特别详细，唯一的不足就是老师的普通话有点不太好，我家孩子有点听不懂</p>
+							</li>
+							<li style="width: 860px;height: 122px;border-left: 5px solid rgb(238,238,238);">
+								<img src="../image/image1/default.png" style="width: 80px;height: 80px;margin-left: 0px;"/>
+								<div style="width: 725px;height: 31px;border-bottom: 1px solid rgb(238,238,238);margin-left: 100px;margin-top: -60px;">
+									<span >评分：</span>
+									<span style="margin-left: 100px;">描述相符：5.0 教学态度：5.0 课程质量：5.0</span>
+									<span style="float: right;">2016-08-21 三年级数学</span>
+								</div>
+								<p style="margin-left: 100px;margin-top: 10px;">老师很有耐心，讲解的特别详细，唯一的不足就是老师的普通话有点不太好，我家孩子有点听不懂</p>
+							</li>
+							<li style="width: 860px;height: 122px;border-left: 5px solid rgb(238,238,238);">
+								<img src="../image/image1/default.png" style="width: 80px;height: 80px;margin-left: 0px;"/>
+								<div style="width: 725px;height: 31px;border-bottom: 1px solid rgb(238,238,238);margin-left: 100px;margin-top: -60px;">
+									<span >评分：</span>
+									<span style="margin-left: 100px;">描述相符：5.0 教学态度：5.0 课程质量：5.0</span>
+									<span style="float: right;">2016-08-21 三年级数学</span>
+								</div>
+								<p style="margin-left: 100px;margin-top: 10px;">老师很有耐心，讲解的特别详细，唯一的不足就是老师的普通话有点不太好，我家孩子有点听不懂</p>
+							</li>
+							<li style="width: 860px;height: 122px;border-left: 5px solid rgb(238,238,238);">
+								<img src="../image/image1/default.png" style="width: 80px;height: 80px;margin-left: 0px;"/>
+								<div style="width: 725px;height: 31px;border-bottom: 1px solid rgb(238,238,238);margin-left: 100px;margin-top: -60px;">
+									<span >评分：</span>
+									<span style="margin-left: 100px;">描述相符：5.0 教学态度：5.0 课程质量：5.0</span>
+									<span style="float: right;">2016-08-21 三年级数学</span>
+								</div>
+								<p style="margin-left: 100px;margin-top: 10px;">老师很有耐心，讲解的特别详细，唯一的不足就是老师的普通话有点不太好，我家孩子有点听不懂</p>
+							</li>
+						</ul>
+						<div style="width:868px;height: 76px;margin-top: -200px;text-align: center;">
+							<ul class="btnChange" style="">
+								<li><button class="active">1</button></li>
+								<li><button>2</button></li>
+								<li><button>3</button></li>
+								<li><button>4</button></li>
+								<li><button>5</button></li>
+								<li><button>6</button></li>
+								<li><button>下页</button></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div style="width: 280px;height:1200px;margin-top:-2176px;float: right;">
+					<!--小日历-->
+					<div style="width: 280px;height: 290px;float: right;margin-top: 0px;border: 1px solid rgb(238,238,238);border-top: 2px solid rgb(30,200,0);border-bottom: 1px solid rgb(238,238,238);" >
+						<div class = "sectionRight" style="width: 280px;height: 43px;margin-top: 0px;margin-left: 0px;padding-top: 13px;padding-left: 10px;">
+							<h4 style="display: inline;">授课时间</h4>
+							<img src="../image/image1/keyuyue.png" style="margin-left: 20px;"/><span>可预约</span>
+							<img src="../image/image1/bukeyuyue.png" style="margin-left: 20px;"/><span>不可预约</span>
+						</div>	
+						<div style="width: 280px;height: 43px;margin-top: 1px;margin-left: 0px;padding-top: 10px;">
+							<button style="float: left;font-size: 18px;margin-left: 10px;border: none;background: transparent;"  class="dateCal"><</button>
+							<span class="date1" style="margin-left: 60px;">
+								<span style="color: rgb(30,200,0);font-size: 18px;"><span class="date1_month">9</span>月</span>
+								<span class="date1_day">9</span>日
+							</span>-
+							<span class="date2">
+								<span style="color: rgb(30,200,0);font-size: 18px;"><span class="date2_month"></span>月</span>
+								<span class="date2_day">16</span>日
+							</span>
+							<button style="float: right;font-size: 18px;margin-right: 10px;width: 20px;height: 20px;border: none;background: transparent;" class="dateCal">></button>
+						</div>
+						<ul style="width: 280px;height: 50px;margin-top: 0px;margin-left: 0px;border: 1px solid rgb(238,238,238);padding-right: -10px;" id="dateLists">
+							
+							<li style="width: 35px;">
+							</li>
+							<li class="dateList">
+								<p class="dates"></p>
+								<p class="days"></p>
+							</li>
+							<li class="dateList">
+								<p class="dates"></p>
+								<p class="days"></p>
+							</li>
+							<li class="dateList">
+								<p class="dates"></p>
+								<p class="days"></p>
+							</li>
+							<li class="dateList">
+								<p class="dates"></p>
+								<p class="days"></p>
+							</li>
+							<li class="dateList">
+								<p class="dates"></p>
+								<p class="days"></p>
+							</li>
+							<li class="dateList">
+								<p class="dates"></p>
+								<p class="days"></p>
+							</li>
+							<li class="dateList" style="margin-right: -10px;">
+								<p class="dates"></p>
+								<p class="days"></p>
+							</li>
+						</ul>
+						<table class = "available" style="width: 280px;height: 150px;margin-top: -10px;margin-left: 0px;" cellpadding="0px" cellspacing="0">
+							<tr>
+								<td style="border-left: none;">上午</td><td>早</td><td>早</td><td>早</td><td>早</td><td>早</td><td>早</td><td>早</td>
+							</tr>
+							<tr>
+								<td style="border-left: none;">下午</td><td>中</td><td>中</td><td>中</td><td>中</td><td>中</td><td>中</td><td>中</td>
+							</tr>
+							<tr style="border-bottom: none;"> 
+								<td style="border-left: none;">晚上</td><td>晚</td><td>晚</td><td>晚</td><td>晚</td><td>晚</td><td>晚</td><td>晚</td>
+							</tr>
+						</table>
+					</div>
+					<ul style="width: 280px;height: 203px;border: 1px solid rgb(238,238,238);float: right;margin-top: 20px;list-style: none;">
+						<li style="font-size: 18px;width: 280px;height: 40px;border-bottom: 1px solid rgb(238,238,238);padding-top: 14px;padding-left: 20px;font-weight: lighter;">
+							教学专长
+						</li>
+						<li class="expertise">五年级数学小数乘法</li>
+						<li class="expertise">五年级数学位置</li>
+						<li class="expertise">五年级数学分数的意义和性质</li>
+						<li class="expertise">五年级数学统计</li>
+					</ul>
+					<ul style="width: 280px;height: 201px;border: 1px solid rgb(238,238,238);float: right;margin-top: 20px;list-style: none;">
+						<li style="font-size: 18px;width: 280px;height: 40px;border-bottom: 1px solid rgb(238,238,238);padding-top: 14px;padding-left: 20px;font-weight: lighter;">
+							成长档案
+						</li>
+						<li class="growth">
+							<div style="width: 50px;height: 50px;border-radius: 50%;background: rgb(255,150,56);text-align: center;padding-top: 10px;">
+								<img src="../image/image1/dangan.png"/>
+							</div>
+							<p style="margin-top: -30px;margin-left: 70px;">已完成<span style="color: rgb(255,150,56);">256</span>个学情报告</p>
+						</li>
+						<li class="growth" style="padding-top: 20px;">
+							<div style="width: 50px;height: 50px;border-radius: 50%;background: rgb(82,209,79);text-align: center;padding-top: 12px;">
+								<img src="../image/image1/tupian.png"/>
+							</div>
+							<p style="margin-top: -35px;margin-left: 70px;">已完成<span style="color: rgb(255,150,56);">0</span>个培养计划</p>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</section>
+	
+		<!--页尾-->
+		<!-- 页尾部分 -->
+	<div style="width:100%;height:460px;background:rgb(38,38,38);" id="foot">
+		<!--网站导航-->
+		<div class="footP"><div style="margin:auto;width:1200px;height:42px;padding-top:7px;text-align:center;"><a class="aToggle" style="text-decoration: none;color: rgb(181,181,181);">网站导航<span class="spanToggle">∧</span></a></div></div>
+		<!--页尾第二部分-->
+		<div id="footer1">
+			<div id="footer1Content">
+				<a href="#">
+					<img src="../image/image1/logo_footer.png" alt="" class="logo_footer"/>
+				</a>
+				<dl class="dl1">
+					<dt><span>帮助中心</span></dt><br />
+					<dd><a href="#">平台攻略</a></dd>
+					<dd><a href="#">教师入驻</a></dd>
+					<dd><a href="#">教师帮助</a></dd>
+					<dd><a href="#">学生帮助</a></dd>
+					<dd><a href="#">注册登录</a></dd>
+					<dd><a href="#">平台保障</a></dd>
+				</dl>
+				<dl class="dl2">
+					<dt>服务支持</dt><br />
+					<dd><a href="#">支付方式</a></dd>
+					<dd><a href="#">意见反馈</a></dd>
+				</dl>
+				<dl  class="dl3">
+					<dt>关于三好</dt><br />
+					<dd><a href="#">公司简介</a></dd>
+					<dd><a href="#">加入我们</a></dd>
+					<dd><a href="#">联系我们</a></dd>
+					<dd><a href="#">网站条款</a></dd>
+					<dd><a href="#">新闻报道</a></dd>
+					<dd><a href="#">活动公告</a></dd>
+					<dd><a href="#">友情链接</a></dd>
+					<dd><a href="#">网站地图</a></dd>
+				</dl>
+				<dl  class="dl4">
+					<dt>关注我们</dt><br />
+					<dd><a href="#">官方微信</a></dd>
+					<dd><a href="#">新浪微博</a></dd>
+				</dl>
+				<div style="width:270px;height: 175px;float: right;margin-top: 40px;margin-left: -32px;">
+					<p class="tel">4000-176-333</p>
+					<p class="workTime">周一至周日 7X24小时在线客服</p>
+					
+					<div class="d1" style="border:1px solid gray;width: 30px;height: 30px;border-radius: 15px;background: url(../image/image1/a.png);background-repeat: no-repeat;float: left;background-position: 2px;margin-left: 40px;" onclick="fun2()">
+						<div style="border:0px solid white;width: 30px;height: 30px;padding: 0px;border-radius: 15px;"></div>
+					</div>
+					<div class="d1" style="border:1px solid gray;width: 30px;height: 30px;padding: 0px;border-radius: 15px;background: url(../image/image1/b.png);background-repeat: no-repeat;float: left;background-position: 2px;" onclick="fun5()">
+						<div style="border:0px solid white;width: 30px;height: 30px;padding: 0px;border-radius: 15px;"></div>
+					</div>
+					<div class="d1" style="border:1px solid gray;width: 30px;height: 30px;padding: 0px;border-radius: 15px;background: url(../image/image1/c.png);background-repeat: no-repeat;float: left;background-position: 2px;" onclick="fun6()">
+						<div style="border:0px solid white;width: 30px;height: 30px;padding: 0px;border-radius: 15px;"></div>
+					</div>
+					<div class="d1" style="border:1px solid gray;width: 30px;height: 30px;padding: 0px;border-radius: 15px;background: url(../image/image1/d.png);background-repeat: no-repeat;float: left;background-position: 2px;" onclick="fun7()">
+						<div style="border:0px solid white;width: 30px;height: 30px;padding: 0px;border-radius: 15px;"></div>
+					</div>
+					<div class="d1" style="border:1px solid gray;width: 30px;height: 30px;padding: 0px;border-radius: 15px;background: url(../image/image1/e.png);background-repeat: no-repeat;float: left;background-position: 2px;" onclick="fun8()">
+						<div style="border:0px solid white;width: 30px;height: 30px;padding: 0px;border-radius: 15px;"></div>
+					</div>
+					<div class="d1" style="border:1px solid gray;width: 30px;height: 30px;padding: 0px;border-radius: 15px;background: url(../image/image1/f.png);background-repeat: no-repeat;float: left;background-position: 2px;" onclick="fun4()">
+						<div style="border:0px solid white;width: 30px;height: 30px;padding: 0px;border-radius: 15px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--点击加号出现框-->
+		<div class="dv" id="dv">
+			
+				<div class="dv-head">
+					<table style="width: 100%;">
+						<tr>
+							<td style="text-align: left;width: 160px;"><span style="color: gray;font-weight: 400;font-size: 1.2em;">分享到</span></td>
+							<td style="text-align: right;width: 160px;"><img src="../image/image1/79D702EF-70D7-4988-8E1C-867A83A187D9.png" onclick="fun1()" id="img1"/></td>
+						</tr>
+					</table>
+				</div>
+				<div class="dv-body">
+					<table style="width: 100%;background: gray;">
+						<tr>
+							<td><a href=""><img src="../image/image1/a1.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a2.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a3.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a4.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a5.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a6.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a7.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a8.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a9.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a10.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a11.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a12.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a13.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a14.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a15.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a16.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a17.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a18.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a19.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a20.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a21.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a22.png"/></a></td>
+						</tr>
+
+
+						<tr>
+							<td><a href=""><img src="../image/image1/a13.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a14.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a15.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a16.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a17.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a18.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a19.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a20.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a21.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a22.png"/></a></td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="dv-foot">
+					<a href="" style="color: gray;font-weight: 400;font-size: 1.2em;">百度分享</a>
+				</div>
+		</div>
+		<footer>
+				<div class="footerContent">
+					<p class="p1">北京三好互动教育科技有限公司版权所有 办学许可证：111010873931661 电信与信息服务业务经营许可证：京ICP证150105号 京ICP备14035240号-2 京公网安备11010802016334号<br /> sanhao.com</p>
+					<p class="p2">
+						<a href="#">
+							<img src="../image/image1/link1.jpg" alt="" />
+						</a>
+						<a href="#">
+							<img src="../image/image1/link2.jpg" alt="" />
+						</a>
+						<a href="#">
+							<img src="../image/image1/aqyz.png" alt="" />
+						</a>
+						<a href="#">
+							<img src="../image/image1/cnnic.png" alt="" />
+						</a>
+						<a href="#">
+							<img src="../image/image1/link5.jpg" alt="" />
+						</a>
+					</p>
+				</div>
+		</footer>
+	</div>
+	<!--右边栏悬浮图标-->
+	<div id="recommends">
+		<div>
+			<a href="#" class="boxParent">
+				<img src="../image/image1/qq1.png"  class="imgFloat"/>
+				<div style="width: 129px;height: 146px;position: absolute;background:rgb(28,184,225);margin-left: -139px;margin-top: -90px; font-family:'微软雅黑';display:none;">
+				<img src="../image/image1/app_ewm.png" style="margin-top:7px;margin-left:7px;width:115px;height:115px;border-radius:0px;">
+				<h5 style="margin-top:4px;margin-left:17px;color:white;">下载三好网app</h5>
+				<!--  -->
+				<div class="trian2"></div>
+			</div>
+
+			</a>
+		</div>
+		<div>
+			<a href="#" class="boxParent">
+			<img src="../image/image1/weixin.png" class="imgFloat" />
+			<div style="width: 129px;height: 146px;position: absolute;background:rgb(37,184,150);margin-left: -139px;margin-top: -90px; font-family:'微软雅黑';display:none;">
+				<img src="../image/image1/weichatPublic.png" style="margin-top:7px;margin-left:7px;width:115px;height:115px;border-radius:0px;">
+				<h5 style="margin-top:4px;margin-left:21px;color:white;">三好网订阅号</h5>
+				<!--  -->
+				<div class="trian2"></div>
+			</div>
+			</a>
+		</div>
+		<div>
+			<a href="#" class ="boxParent">
+			<img src="../image/image1/mobile (2).png" class="imgFloat"/>
+			<div style="width: 129px;height: 176px;position: absolute;background:rgb(64,178,43);margin-left:-139px;margin-top: -90px; font-family:'微软雅黑';display:none;">
+				<button  style="background:white;color:rgb(64,178,43);border-radius:50%;width:15px;height:15px;border:none;float:right;text-align:center;padding-top: -15px; margin-top:2px;" class = "btnDismiss"><span style="margin-top:-10px;position:absolute;margin-left:-4px">x</span></button>
+				<input type="text" placeholder="请输入您手机号" name="" style="width:115px;height:31px;border:1px solid white;background:rgb(64,178,43);outline:none;color:white;margin-left:7px;padding-left:4px;" class="placeHolder">
+				<input type="button" value="立即免费呼叫" name="" style="margin-top:10px;width:115px;height:31px;background:white;color:rgb(64,178,43);text-align:center;border:none;margin-left:7px;border-radius:3px;">
+
+				<!--  -->
+				<div class="trian1"></div>
+			</div></a>
+			
+		</div>
+		<div><a href="#" class="recommendNote"><img src="../image/image1/note.png" class="imgFloat"/></a></div>
+		<div><a href="javascript:scroll(0,0)" mce_href="javascript:scroll(0,0)"><img src="../image/image1/top.png" class="imgFloat"/></a>
+		</div>
+	</div>
+	<!--右边栏note点击弹出反馈模态框-->
+	<div class = "modal fade" id="myModal" style="margin-left: -20%;margin-top: 5%;">
+		<div class = "modal-dialog">
+			<div   class = "modal-content" style="border-radius:10px;background: rgb(247,250,252);font-family: '微软雅黑';width: 800px;height: 450px;">
+				<div class="modal-header" style="text-align: center;border: none;">
+					<hr style="width: 100%;color: rgb(155,155,155);z-index: 1;margin-top: 80px;position: absolute;margin-left: -15px;"/>
+					<img src="../image/image1/logo_modal.png" style="background-color:rgb(0,0,0);width: 140px;height: 100px;margin: auto;z-index: 1000;"/>
+					<h3 class="modal-title" style="font-size: 18px;font-weight: bolder;color: rgb(90,90,90);" >您的宝贵意见与建议是我们进步的源泉！</h3>
+				</div>
+				<div class="modal-body">
+					<form action="" style="width: 700px;text-align: left;">
+						<h6 style="color: rgb(70,156,53);margin-left:10px;font-size: 13px;margin-top: -10px;">反馈类型</h6>
+						<div class="feedbackType feedbackType1"><span style="padding-top: 7px;position: absolute;margin-left: -30px;">使用疑问</span><img src="../image/image1/icon-right.png" class="arrow1"/></div>
+						<div class="feedbackType"><span style="padding-top: 7px;position: absolute;margin-left: -30px;">服务体验</span><img src="../image/image1/icon-right.png" class="arrow1"/><!--<span>√</span>--></div>
+						<div class="feedbackType"><span style="padding-top: 7px;position: absolute;margin-left: -30px;">视觉设计</span><img src="../image/image1/icon-right.png" class="arrow1"/></div>
+						<div class="feedbackType"><span style="padding-top: 7px;position: absolute;margin-left: -30px;">产品功能</span><img src="../image/image1/icon-right.png" class="arrow1"/></div>
+						<input type="textarea" style="margin-left:11px;width: 689px;height: 80px;margin-top: 20px;border: 1px solid rgb(185,185,185);" placeholder="说出您要解决的问题详细描述，或期待我们改进的地方......"/>
+						<input type="text" placeholder="填写您的联系方式（手机号/微信号/QQ号）,有助于我们解决问题（资料绝对保密）" style="margin-left:11px;width: 689px;height: 40px;margin-top: 20px;border: 1px solid rgb(185,185,185);"/>
+						<input type="button" value="提交反馈" style="margin-top:3px;margin-left:11px;width: 200px;height: 35px;background: rgb(70,176,53);border-radius:5px;color: white;" />
+						<input type="button" value="取消反馈" style="margin-top:3px;margin-left:11px;width: 200px;height: 35px;background: rgb(160,160,160);border-radius:5px;color: white;font-weight: normal;font-size: 20px;"  class="close" data-dismiss="modal"/>
+					</form>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<!--点击smallWeichat中微信图标出现二维码-->
+	<div id="qrCode">
+		<h6>分享到微信或朋友圈</h6>
+		<button class="qrBtn"><img src="../image/image1/closeSelf.png"/></button>
+		<img src="../image/image1/ewm.png" class="qrcode"/>
+		<p>打开微信，点击底部的“发现”，<br> 使用“扫一扫”即可将网页分享至朋友圈。</p>
+	</div>
+	<!--点击加号出现更多-->
+	<div id="btnBox2">
+		<p style="width:223px;height:25px;background:rgb(246,246,246);margin-top: 0px;margin-left: 0px;text-align: left;padding-left: 5px;font-size: 15px;padding-top: 5px;font-weight: bold;color: rgb(98,98,144);">分享到</p>
+		
+			<ul class="btnBoxUl">
+				<li><img src="../image/image1/yijianfenxiang.png"/>一键分享</li>
+				<li><img src="../image/image1/smallQzone.png"/>qq空间</li>
+				<li><img src="../image/image1/smallSina.png"/>新浪微博</li>
+				<li><img src="../image/image1/baiduyunshoucang.png"/>百度云收藏</li>
+				<li><img src="../image/image1/smallWechat.png"/>微信</li>
+				<li><img src="../image/image1/smallRenren.png"/>人人网</li>
+				<li><img src="../image/image1/smallTencent.png"/>腾讯微博</li>
+				<li><img src="../image/image1/baiduxiangce.png"/>百度相册</li>
+				<li><img src="../image/image1/kaixinwang.png"/>开心网</li>
+				<li><img src="../image/image1/tengxunpengyou.png"/>腾讯朋友</li>
+				<li><img src="../image/image1/baidutieba.png"/>百度贴吧</li>
+				<li><img src="../image/image1/doubanwang.png"/>豆瓣网</li>
+				<li><img src="../image/image1/baiduxinshouye.png"/>百度新首页</li>	
+				<li><img src="../image/image1/qqhaoyou.png"/>QQ好友</li>
+				<li><img src="../image/image1/hexunweibo.png"/>和讯微博</li>
+				<li><img src="../image/image1/baiduzhongxin.png"/>百度中心</li>
+			</ul>
+		<p style="width:223px;height:25px;background:rgb(246,246,246);margin-left: 0px;margin-top:263px;text-align: right;padding-left: 5px;font-size: 15px;padding-top: 5px;font-weight: lighter;">
+			<img src="../image/image1/plus1.png" style="margin-top: 10px;position: absolute;margin-left: -80px;margin-top: 1px;"/>
+			<a href="#" style="color: rgb(153,153,153);font-size: 13px;position: absolute;margin-left: -60px;">更多...</a>
+		</p>
+	</div>
+	</body>
+</html>

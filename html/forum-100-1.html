@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/forum-100-1.css">
+    <script type="text/javascript" src="../js/forum-100-1.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">  
+    <script src="jquery-3.0.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <title>中小学学习论坛_教师交流论坛_家长交流论坛-三好网社区-</title>
+</head>
+<body>
+    <header>
+         <div style="height: 170px;width: 120px;border: 1px solid rgb(233,233,233);position: fixed;right: 0px;top: 200px;z-index: 1;background: rgb(247,247,247);text-align: center;" id="XX">
+         <div style="height: 20px;width: 60px;border: 1px solid rgb(200,200,200);margin-left: 60px;cursor: pointer;" onclick="XX()">X关闭</div>
+         <img src="../image/image4/forum_223.png" style="height: 80px;width: 80px;margin-top: 5px;"><br>
+         <label style="color: gray;">扫描二维码</label><br>
+         <label style="color: gray;">手机浏览本页面</label>
+     </div>
+
+     <div style="height: 60px;width: 60px;position: fixed;right: 0px;top: 400px;z-index: 1;" id="YY">
+         <a href="#"><img src="../image/image4/top.png"></a>
+     </div>
+   <script type="text/javascript">
+       function XX() {
+           $("#XX").css("display","none");
+       }
+       window.onscroll = function(){ 
+            var t = document.documentElement.scrollTop || document.body.scrollTop;  
+            var top_div = document.getElementById( "top_div" ); 
+            if( t >= 300 ) { 
+                $("#YY").css("display","block");
+            } else { 
+                $("#YY").css("display","none");
+            } 
+        } 
+   </script>
+    <div style="height: 100%;width: 100%;background: gray;opacity: 0.3;position: fixed;display: none;z-index: 1;" id="Y"></div>
+     <div style="height: 330px;width: 520px;border: 1px solid rgb(233,233,233);position: fixed;left: 400px;top: 200px;z-index: 2;background: rgb(247,247,247);margin: 0 auto;display: none;" id="X">
+        <div style="height: 40px;width: 520px;background: rgb(247,247,247);">
+            <p style="display: inline;line-height: 40px;margin-left: 20px;">用户登录</p>
+            <button style="height: 20px;width: 20px;border-radius: 3px;border: none;cursor: pointer;background: rgb(161,161,161);position: relative;left: 390px;" onclick="X()">X</button>
+        </div>
+        <div style="height: 40px;width: 480px;border-bottom: 1px dashed gray;margin: 0 auto;line-height: 40px;">
+            <label style="height: 40px;width: 100px;text-align: right;display: inline-block;">用户名：</label>
+            <input type="text" style="height: 24px;width: 240px;">
+            <a href="" style="text-decoration: blink;color: gray;">立即注册</a>
+        </div>
+        <div style="height: 40px;width: 480px;border-bottom: 1px dashed gray;margin: 0 auto;line-height: 40px;">
+            <label style="height: 40px;width: 100px;text-align: right;display: inline-block;">密码：</label>
+            <input type="password" style="height: 24px;width: 240px;">
+            <a href="" style="text-decoration: blink;color: gray;">找回密码</a>
+        </div>
+        <div style="height: 40px;width: 480px;border-bottom: 1px dashed gray;margin: 0 auto;line-height: 40px;">
+            <label style="text-align: right;height: 40px;width: 100px;display: inline-block;">安全提问：</label>
+            <select style="display: inline-block;height: 24px;width: 180px;">
+                <option>安全问题(未设置请忽略)</option>
+                <option>母亲的名字</option>
+                <option>父亲的名字</option>
+                <option>童年玩伴的名字</option>
+                <option>印象最深的老师的名字</option>
+                <option>学号</option>
+            </select>
+        </div>
+        <div style="height: 40px;width: 480px;border-bottom: 1px dashed gray;margin: 0 auto;line-height: 40px;">
+            <label style="height: 40px;width: 100px;display: inline-block;text-align: right;">验证码：</label>
+            <input type="password" style="height: 20px;width: 100px;">
+            <a style="text-decoration: blink;color: blue;font-size: 16px;cursor: pointer;" onclick="suiji2()">换一个
+            </a>
+            <p id="bb2" style="display: inline;"></p>
+        </div>
+        <div style="height: 80px;width: 480px;border-bottom: 1px dashed gray;margin: 0 auto;line-height: 40px;">
+            <input type="radio" style="margin-left: 110px;">自动登录
+            <input type="button" value="登录" style="height: 20px;width: 50px;border: none;display: block;margin-left: 110px;background: rgb(255,153,0);line-height: 20px;">
+        </div>
+        <div style="height: 40px;width: 480px;margin: 0 auto;margin-top: 5px;">
+            <div style="text-align: center;height: 40px;">
+                    <p style="display: inline-block; color: gray;font-size: 14px;height: 24px;line-height: 24px;">快捷登录</p>
+                    <img src="../image/image4/qq_login.gif" style="display: inline-block;cursor: pointer;">
+                    <img src="../image/image4/wechat_login.png" style="cursor: pointer;">
+                </div>
+        </div>
+     </div>
+
+        <div id="head1">
+            <div id="head11">
+                <div><a href=""><img src="../image/image4/logo.png"></a>
+                </div>
+                    <a href="../html/portal.html"><div class="c1">社区</div></a>
+                    <a href="../html/forum.html"><div class="c2" onmouseover="c2over()" onmouseout="c2out()" style="background: rgb(46,148,38);">板块</div></a>
+                    <a href="../html/plugin.html"><div class="c3">问答</div></a>
+                    <a href=""><div class="c4" onmouseover="c4over()" onmouseout="c4out()">名师一对一</div></a>
+                <div id="div2">
+                    <div id="div22">
+                        <button id="div221" onclick="b1over()" onmouseout="b1out()">帖子</button>
+                        <input type="text" placeholder="请输入搜索内容"">
+                        <button id="div222"><img src="../image/image4/magnifier.png"></button>
+                    </div>
+                    <div id="div33">
+                        <button id="button1"><a href="../html/member.html">注册</a></button>
+                        <button id="button2" onclick="Y()">登录</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="head2">
+            <div id="head22">
+                <div id="re">热门板块</div>
+                <div class="a">|</div>
+                <table>
+                    <tr>
+                        <td><a href="../html/forum-223-1.html"><div class="b">家长会</div></a></td>
+                        <td><a href="../html/forum-225-1.html"><div class="b">家长吐槽</div></a></td>
+                        <td><a href="../html/forum-209-1.html"><div class="b">学生扒</div></a></td>
+                        <td><a href="../html/forum-200-1.html"><div class="b">资料下载</div></a></td>
+                        <td><a href="../html/forum-293-1.html"><div class="b">学习答疑</div></a></td>
+                        <td><a href="../html/forum-220-1.html"><div class="b">教师资讯</div></a></td>
+                        <td><a href="../html/forum-221-1.html"><div class="b">教学经验</div></a></td>
+                        <td><a href="../html/forum-222-1.html"><div class="b">教师吐槽</div></a></td>
+                    </tr>
+                </table>
+                <div id="bankuai" onmouseover="c2over()" onmouseout="c2out()" style="z-index: 1;">
+                    <a href="../html/forum-209-1.html"><div style="margin-top: 10px;">学生扒</div></a>    
+                    <a href="../html/forum-221-1.html"><div>教师帮</div></a>
+                    <a href="../html/forum-223-1.html"><div>家长会</div></a>
+                    <a href="../html/forum-293-1.html"><div style="border: none;">答疑专区</div></a>
+                </div>
+                <div id="mingshi" onmouseover="c4over()" onmouseout="c4out()" style="z-index: 1;">
+                    <a href="#"><div style="margin-top: 10px;">智能配客</div></a>
+                    <a href="#"><div>师生攻略</div></a>
+                    <a href="#"><div>客户端下载</div></a>
+                    <a href="#"><div style="border: none;">APP下载</div></a>
+                </div>
+                <div id="tie" onmouseover="b1over()" onmouseout="b1out()" style="z-index: 1;">
+                    <div id="a1" onclick="a1()">文章</div>
+                    <div id="a2" onclick="a2()">贴吧</div>
+                    <div id="a3" onclick="a3()">用户</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <div id="body">
+        <div style="height: 20px;margin: 0 auto;width: 1200px;"></div>
+        <div style="height: 50px;width: 1200px;background: white;border-radius: 4px;margin: 0 auto;line-height: 50px;">
+            <a href="#"><span class="glyphicon glyphicon-home" style="margin-left: 20px;"></span></a>
+            >
+            <a href="#">小黑屋</a>
+        </div>
+        <div style="width: 1200px;margin: 20px auto;" id="d">
+            <div style="height: 40px;width: 1200px;background: rgb(242,242,242);line-height: 40px;text-align: left;">
+                <label style="margin-left: 20px;">用户名</label>
+                <label>操作行为</label>
+                <label>过期时间</label>
+                <label>操作时间</label>
+                <label>操作理由</label>
+            </div>
+            <div style="height: 40px;width: 1200px;background: white;line-height: 40px;text-align: left;">
+                <label style="margin-left: 20px;">小明</label>
+                <label>禁止访问</label>
+                <label>永不过期</label>
+                <label>3小时前</label>
+            </div>
+            <div style="height: 40px;width: 1200px;background: rgb(242,242,242);line-height: 40px;text-align: left;">
+                <label style="margin-left: 20px;">小刚</label>
+                <label>禁止访问</label>
+                <label>永不过期</label>
+                <label>3小时前</label>
+            </div>
+            <div style="height: 40px;width: 1200px;background: white;line-height: 40px;text-align: left;">
+                <label style="margin-left: 20px;">小明</label>
+                <label>禁止访问</label>
+                <label>永不过期</label>
+                <label>3小时前</label>
+            </div>
+            <div style="height: 40px;width: 1200px;background: rgb(242,242,242);line-height: 40px;text-align: left;">
+                <label style="margin-left: 20px;">小刚</label>
+                <label>禁止访问</label>
+                <label>永不过期</label>
+                <label>3小时前</label>
+            </div>
+            <div style="height: 40px;width: 1200px;background: white;line-height: 40px;text-align: left;">
+                <label style="margin-left: 20px;">小明</label>
+                <label>禁止访问</label>
+                <label>永不过期</label>
+                <label>3小时前</label>
+            </div>
+            <div style="height: 40px;width: 1200px;background: rgb(242,242,242);line-height: 40px;text-align: left;">
+                <label style="margin-left: 20px;">小刚</label>
+                <label>禁止访问</label>
+                <label>永不过期</label>
+                <label>3小时前</label>
+            </div>
+            <div style="height: 40px;width: 1200px;background: white;line-height: 40px;text-align: left;">
+                <label style="margin-left: 20px;">小明</label>
+                <label>禁止访问</label>
+                <label>永不过期</label>
+                <label>3小时前</label>
+            </div>
+            <div style="height: 40px;width: 1200px;background: rgb(242,242,242);line-height: 40px;text-align: left;">
+                <label style="margin-left: 20px;">小刚</label>
+                <label>禁止访问</label>
+                <label>永不过期</label>
+                <label>3小时前</label>
+            </div>
+            <div style="height: 40px;width: 1200px;background: white;line-height: 40px;text-align: left;">
+                <label style="margin-left: 20px;">小明</label>
+                <label>禁止访问</label>
+                <label>永不过期</label>
+                <label>3小时前</label>
+            </div>
+            <div style="height: 40px;width: 1200px;background: rgb(242,242,242);line-height: 40px;text-align: left;">
+                <label style="margin-left: 20px;">小刚</label>
+                <label>禁止访问</label>
+                <label>永不过期</label>
+                <label>3小时前</label>
+            </div>
+            <div style="height: 40px;width: 1200px;background: white;line-height: 40px;text-align: left;">
+                <label style="margin-left: 20px;">小明</label>
+                <label>禁止访问</label>
+                <label>永不过期</label>
+                <label>3小时前</label>
+            </div>
+            <div style="height: 40px;width: 1200px;background: rgb(242,242,242);line-height: 40px;text-align: left;">
+                <label style="margin-left: 20px;">小刚</label>
+                <label>禁止访问</label>
+                <label>永不过期</label>
+                <label>3小时前</label>
+            </div>
+            <div style="height: 40px;width: 1200px;background: white;line-height: 40px;text-align: left;">
+                <label style="margin-left: 20px;">小明</label>
+                <label>禁止访问</label>
+                <label>永不过期</label>
+                <label>3小时前</label>
+            </div>
+            <div style="height: 40px;width: 1200px;background: rgb(242,242,242);line-height: 40px;text-align: left;">
+                <label style="margin-left: 20px;">小刚</label>
+                <label>禁止访问</label>
+                <label>永不过期</label>
+                <label>3小时前</label>
+            </div>
+            <div style="height: 40px;width: 1200px;background: white;line-height: 40px;text-align: left;">
+                <label style="margin-left: 20px;">小明</label>
+                <label>禁止访问</label>
+                <label>永不过期</label>
+                <label>3小时前</label>
+            </div>
+            <div style="height: 40px;width: 1200px;background: rgb(242,242,242);line-height: 40px;text-align: left;">
+                <label style="margin-left: 20px;">小刚</label>
+                <label>禁止访问</label>
+                <label>永不过期</label>
+                <label>3小时前</label>
+            </div>
+            <div style="height: 40px;width: 1200px;background: white;line-height: 40px;text-align: left;">
+                <label style="margin-left: 20px;">小明</label>
+                <label>禁止访问</label>
+                <label>永不过期</label>
+                <label>3小时前</label>
+            </div>
+            <div style="height: 40px;width: 1200px;background: rgb(242,242,242);line-height: 40px;text-align: left;">
+                <label style="margin-left: 20px;">小刚</label>
+                <label>禁止访问</label>
+                <label>永不过期</label>
+                <label>3小时前</label>
+            </div>
+            <div style="height: 40px;width: 70px;text-align: center;line-height: 40px;cursor: pointer;background: white;">更多</div>
+        </div>
+        <div style="height: 20px;width: 1200px;margin: 0 auto;"></div>
+    </div>
+
+
+
+    
+    <footer>
+        <div id="foot1">
+            <table>
+                <caption>友情链接：</caption>
+                <tr>
+                    <td><a href="../html/sanhao.html">三好网官网</a></td>
+                    <td><a href="../html/sanhao.html">三好网移动端</a></td>
+                    <td><a href="http://www.shudouzi.com/">会计从业资格学习网</a></td>
+                    <td><a href="http://www.jlxly.cn/">军事夏令营</a></td>
+                    <td><a href="http://bbs.zgsydw.com/">事业单位论坛</a></td>
+                    <td><a href="http://xa.tantuw.com/">西安教育培训</a></td>
+                    <td><a href="http://jinan.baoyatu.com.cn/">济南早教</a></td>
+                    <td><a href="http://ask.molbase.com/">化工百科</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://bbs.cz.fang.com/">常州业主论坛</a></td>
+                    <td><a href="http://www.hiqikan.com/">论文发表</a></td>
+                    <td><a href="http://sat.bailitop.com/">SAT考试</a></td>
+                    <td><a href="http://www.bjpxt.cn/">北京会计培训</a></td>
+                    <td><a href="http://suzhou.huatu.com/">苏州人事考试网</a></td>
+                    <td><a href="../html/forum-100-1.html">小黑屋</a></td>
+                    <td><a href="../html/sanhao.html">手机版</a></td>
+                    <td><a href="../html/sanhao.html">触屏版</a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="foot2">
+            <table style="position: relative;top: 15px;">
+                <tr valign="top">
+                    <td>
+                        <div class="dd1">平台流程</div>
+                        <div><a href="">平台流程</a></div>
+                        <div><a href="">教师入驻</a></div>
+                        <div><a href="">教师帮助</a></div>
+                        <div><a href="">学生帮助</a></div>
+                        <div><a href="">注册登录</a></div>
+                        <div><a href="">平台保障</a></div>
+                    </td>
+                    <td>
+                        <div class="dd1">服务支持</div>
+                        <div><a href="http://www.sanhao.com/joinus.php#0">支付方式</a></div>
+                        <div><a href="http://www.sanhao.com/joinus.php#1">意见反馈</a></div>
+                    </td>
+                    <td>
+                        <div class="dd1">关于三好</div>
+                        <div><a href="http://www.sanhao.com/joinus.php#2">公司简介</a></div>
+                        <div><a href="http://www.sanhao.com/joinus.php#3">加入我们</a></div>
+                        <div><a href="http://www.sanhao.com/joinus.php#4">联系我们</a></div>
+                        <div><a href="http://www.sanhao.com/joinus.php#5">网站条款</a></div>
+                        <div><a href="http://www.sanhao.com/joinus.php#6">新闻报道</a></div>
+                        <div><a href="http://www.sanhao.com/joinus.php#7">活动公告</a></div>
+                    </td>
+                    <td>
+                        <div class="dd1">关注我们</div>
+                        <div><a href="#">官方微信</a></div>
+                        <div><a href="http://weibo.com/sanhaowang">新浪微博</a></div>
+                    </td>
+                    <td colspan="2" rowspan="7">
+                        <img src="../image/image4/tel.png">
+                        <div style="font-size: 32px;font-weight: bolder;color: white">4000-176-333</div>
+                        <div style="font-size: 16px;">周一至周日 7X24小时在线客服</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="foot3">
+            <div style="width: 1200px; margin: 0 auto;">
+                 <span style="color: rgb(92,102,92); margin-left: 5px;position: relative;top: 5px;">Powered by <b style="color: rgb(192,192,192);">Discuz!</b> X3.2</span> 
+                 <span>
+                     <a href="" style="margin-left: 795px;">
+                          <img src="../image/image4/site_qq.jpg" style="position: relative;top: 5px;">
+                     </a> |
+                     <span>
+                         <a href="../html/portal.html" style="color: rgb(192,192,192);text-decoration: none;font-weight: bold;position: relative;top: 5px;">三好社区</a>
+                     </span>
+                     <a href=""><img src="../image/image4/security.png" style="position: relative;top: 5px;"></a>
+                 </span>  
+            </div>
+        </div>
+    </footer>
+   
+</body>
+</html>                                                    

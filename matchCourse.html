@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<style type="text/css">
+			body {
+				
+				/*background: green;*/
+				background-image: url(image/image3/matchCourse/bg.jpg);
+			}
+			
+			p {
+				width: 170px;
+				color: white;
+				height: 40px;
+				border-radius: 20px;
+				border: 1px solid white;
+				line-height: 40px;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			p:hover {
+				background: white;
+				color: black;
+			}
+			
+			td {
+				margin-left: 50px;
+			}
+			
+			#dd {
+				display: none;
+			}
+			
+			#d1 {
+				display: block;
+			}
+			
+			#d2 {
+				display: none;
+			}
+			
+			#d3 {
+				display: none;
+			}
+			
+			#d4 {
+				display: none;
+			}
+			
+			#d5 {
+				display: none;
+			}
+			
+			#d6 {
+				display: none;
+			}
+			
+			#d7 {
+				display: none;
+			}
+			
+			#dv1,
+			#dv2,
+			#dv3,
+			#dv4,
+			#dv5,
+			#dv6 {
+				display: none;
+			}
+			
+			#dv1s,
+			#dv2s,
+			#dv3s,
+			#dv4s,
+			#dv5s,
+			#dv6s,
+			#xx1 {
+				display: none;
+			}
+			
+			#d2_t2 p:hover {
+				background: green;
+			}
+			
+			.bt1 {
+				width: 320px;
+				height: 50px;
+				border-radius: 25px;
+				background: lightgray;
+				border: 1px solid lightgray;
+				outline: none;
+				font-size: 1.6em;
+				color: gray;
+				font-weight: 600;
+				margin-bottom: 20px;
+			}
+			
+			.bt1:hover {
+				background: green;
+				color: white;
+			}
+			
+			#butt {
+				outline: none;
+				border: 1px solid white;
+				color: white;
+				width: 450px;
+				height: 50px;
+				font-size: 25px;
+				line-height: 40px;
+				font-weight: 400px;
+				outline: none;
+				background: transparent;
+				border-radius: 25px;
+				display: block;
+				margin-top: 100px;
+				margin-left: 250px;
+			}
+			
+			#butt:hover {
+				background: white;
+				color: black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="d1" style="width:100%;height: 100%;">
+			<div style="width: 1000px;margin: auto;text-align: center;margin-top: 100px;">
+				<img src="image/image3/matchCourse/ren1.png" />
+				<span style="display: inline-block;font-size: 5.3em;color: yellow;line-height: 60px;vertical-align: middle;">55578</span>
+				<img src="image/image3/matchCourse/ren2.png" />
+			</div>
+			<div style="width: 1000px;margin: auto;text-align: center;margin-top: 50px;color: white;font-size: 1.5em;font-weight: 500;">
+				闯关说明：潜能测评分为非智力测评与智力测评两个部分，请选择要挑战的难度。
+			</div>
+			<table style="width: 1000px;margin: auto;text-align: center;margin-top: 100px;">
+				<tr>
+					<td><img src="image/image3/matchCourse/btn1.png" /></td>
+					<td><img src="image/image3/matchCourse/btn2.png" /></td>
+
+				</tr>
+				<tr>
+					<td style="padding-left: 165px;padding-top: 50px;">
+
+						<p style="text-decoration: none;font-size: 1.3em;" onclick="aa()">GO</p>
+
+					</td>
+					<td style="padding-left: 165px;padding-top: 50px;">
+
+						<p style="text-decoration: none;font-size: 1.3em;" onclick="bb()">GO</p>
+
+					</td>
+
+				</tr>
+			</table>
+
+			<!--弹出框-->
+			<div id="dd" style="width: 420px;height: 500px;background: white;position: absolute;left: 400px;top: 300px;text-align: center;">
+				<div style="width: 100%;height: 30px;text-align: right;font-size: 30px;padding: 0px;margin-bottom: 50px;">
+					<span style="cursor: pointer;" onclick="match_span()">X&nbsp;</span>
+				</div>
+
+				<img src="image/image3/matchCourse/logo.png" />
+				<p style="color:lightgray;font-size: 1.5em;font-weight: 600;width: 400px;">请选择测试类型</p>
+				<button class="bt1" onclick="b1()">时间管理测试</button>
+				<button class="bt1" onclick="bv1()">意志类测试</button>
+				<button class="bt1" onclick="bv1s()">教师类测试</button>
+			</div>
+		</div>
+
+		<!--第二页-->
+		<div id="d2" style="width:100%;height: 100%;">
+			<div style="width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr>
+						<td style="text-align: left;">
+							<h1 style="color: white;font-size: 4em;">第1题</h1></td>
+						<td style="text-align: right;color: white;font-weight: 500;font-size: 1.5em;">还有<span style="color: green;">4</span>题</td>
+					</tr>
+					<tr>
+						<td style="color: white;font-size: 1.8em;text-align: left;">您做作业的习惯是？</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div style="padding-top: 20px; width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="b2()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">A</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">又快又好</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="b2()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">B</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">按部就班</span>
+						</td>
+					</tr>
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="b2()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">C</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">没计划</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="b2()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">D</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">做作业会死</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!--第三页-->
+		<div id="d3" style="width:100%;height: 100%;">
+			<div style="width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr>
+						<td style="text-align: left;">
+							<h1 style="color: white;font-size: 4em;">第2题</h1></td>
+						<td style="text-align: right;color: white;font-weight: 500;font-size: 1.5em;">还有<span style="color: green;">3</span>题</td>
+					</tr>
+					<tr>
+						<td style="color: white;font-size: 1.8em;text-align: left;">是否因为时间过于紧迫，草草交差，结果被家长或老师责怪？你属于：</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div style="padding-top: 20px; width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="b3()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">A</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">绝不应付</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="b3()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">B</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">偶尔马虎一次</span>
+						</td>
+					</tr>
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="b3()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">C</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">时间不够用</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="b3()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">D</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">应付差事</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!--第四页-->
+		<div id="d4" style="width:100%;height: 100%;">
+			<div style="width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr>
+						<td style="text-align: left;">
+							<h1 style="color: white;font-size: 4em;">第3题</h1></td>
+						<td style="text-align: right;color: white;font-weight: 500;font-size: 1.5em;">还有<span style="color: green;">2</span>题</td>
+					</tr>
+					<tr>
+						<td style="color: white;font-size: 1.8em;text-align: left;">诚实讲，你属于：</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div style="padding-top: 20px; width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="b4()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">A</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">走在时间前面的人</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="b4()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">B</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">轻度拖延症</span>
+						</td>
+					</tr>
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="b4()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">C</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">中期拖延症</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="b4()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">D</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">拖延重症患者</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!--第五页-->
+		<div id="d5" style="width:100%;height: 100%;">
+			<div style="width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr>
+						<td style="text-align: left;">
+							<h1 style="color: white;font-size: 4em;">第4题</h1></td>
+						<td style="text-align: right;color: white;font-weight: 500;font-size: 1.5em;">还有<span style="color: green;">1</span>题</td>
+					</tr>
+					<tr>
+						<td style="color: white;font-size: 1.8em;text-align: left;">面对挑战性的任务，哪句话说明了你的状态？</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div style="padding-top: 20px; width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="b5()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">A</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">脑洞大开</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="b5()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">B</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">会有办法的</span>
+						</td>
+					</tr>
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="b5()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">C</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">时间都去哪了</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="b5()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">D</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">都是你的错</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!--第六页-->
+		<div id="d6" style="width:100%;height: 100%;">
+			<div style="width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr>
+						<td style="text-align: left;">
+							<h1 style="color: white;font-size: 4em;">第5题</h1></td>
+						<td style="text-align: right;color: white;font-weight: 500;font-size: 1.5em;">最后一题</td>
+					</tr>
+					<tr>
+						<td style="color: white;font-size: 1.8em;text-align: left;">你总是在最后一刻才去做事情，并且有时候需要延期吗?</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div style="padding-top: 20px; width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="b6()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">A</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">立即行动派</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="b6()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">B</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">该干嘛干嘛</span>
+						</td>
+					</tr>
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="b6()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">C</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">再给我点时间</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="b6()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">D</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">必须延期</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!--第七页-->
+		<div id="d7" style="width:100%;height: 100%;padding-top: 200px;">
+			<div style="width:1000px;margin: auto;text-align: center;">
+				<img src="image/image3/matchCourse/ss.png" />
+				<button id="butt">快速匹配老师</button>
+
+				<button id="butt" onclick="cc()">进行深度测评</button>
+			</div>
+		</div>
+
+		<!--第三项-->
+
+		<!--第二页-->
+		<div id="dv2s" style="width:100%;height: 100%;">
+			<div style="width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr>
+						<td style="text-align: left;">
+							<h1 style="color: white;font-size: 4em;">第1题</h1></td>
+						<td style="text-align: right;color: white;font-weight: 500;font-size: 1.5em;">还有<span style="color: green;">4</span>题</td>
+					</tr>
+					<tr>
+						<td style="color: white;font-size: 1.4em;text-align: left;">你路过老师的身旁，发现他手里拿着一样东西，你觉得老师属于：</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div style="padding-top: 20px; width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv2s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">A</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">腐肌宅蛮</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv2s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">B</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">科幻迷</span>
+						</td>
+					</tr>
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv2s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">C</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">运动阳光型</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv2s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">D</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">技术流</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!--第三页-->
+		<div id="dv3s" style="width:100%;height: 100%;">
+			<div style="width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr>
+						<td style="text-align: left;">
+							<h1 style="color: white;font-size: 4em;">第2题</h1></td>
+						<td style="text-align: right;color: white;font-weight: 500;font-size: 1.5em;">还有<span style="color: green;">3</span>题</td>
+					</tr>
+					<tr>
+						<td style="color: white;font-size: 1.4em;text-align: left;">你和喜欢的异性同学放学后偷着逛街，被老师看见了，你希望他的反应是：</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div style="padding-top: 20px; width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv3s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">A</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">冷静理智</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv3s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">B</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">人生导师</span>
+						</td>
+					</tr>
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv3s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">C</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">亦师亦友</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv3s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">D</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">善解人意</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!--第四页-->
+		<div id="dv4s" style="width:100%;height: 100%;">
+			<div style="width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr>
+						<td style="text-align: left;">
+							<h1 style="color: white;font-size: 4em;">第3题</h1></td>
+						<td style="text-align: right;color: white;font-weight: 500;font-size: 1.5em;">还有<span style="color: green;">2</span>题</td>
+					</tr>
+					<tr>
+						<td style="color: white;font-size: 1.4em;text-align: left;">据说新来的老师长得不漂亮，大家都很郁闷，你属于：</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div style="padding-top: 20px; width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv4s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">A</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">外貌控</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv4s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">B</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">看气质</span>
+						</td>
+					</tr>
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv4s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">C</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">知识渊博就好</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv4s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">D</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">主要看性格</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!--第五页-->
+		<div id="dv5s" style="width:100%;height: 100%;">
+			<div style="width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr>
+						<td style="text-align: left;">
+							<h1 style="color: white;font-size: 4em;">第4题</h1></td>
+						<td style="text-align: right;color: white;font-weight: 500;font-size: 1.5em;">还有<span style="color: green;">1</span>题</td>
+					</tr>
+					<tr>
+						<td style="color: white;font-size: 1.4em;text-align: left;">学弟非常佩服他们的老师，你觉得原因是</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div style="padding-top: 20px; width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv5s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">A</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">专业强大</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv5s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">B</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">多才多艺</span>
+						</td>
+					</tr>
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv5s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">C</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">教得好</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv5s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">D</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">见多识广</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!--第六页-->
+		<div id="dv6s" style="width:100%;height: 100%;">
+			<div style="width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr>
+						<td style="text-align: left;">
+							<h1 style="color: white;font-size: 4em;">第5题</h1></td>
+						<td style="text-align: right;color: white;font-weight: 500;font-size: 1.5em;">最后一题</td>
+					</tr>
+					<tr>
+						<td style="color: white;font-size: 1.4em;text-align: left;">喜欢的课堂风格</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div style="padding-top: 20px; width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv6s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">A</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">一起嗨</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv6s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">B</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">多讲精讲</span>
+						</td>
+					</tr>
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv6s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">C</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">让我来</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv6s()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">D</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">多交流</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!--第二项-->
+
+		<!--第二页-->
+		<div id="dv2" style="width:100%;height: 100%;">
+			<div style="width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr>
+						<td style="text-align: left;">
+							<h1 style="color: white;font-size: 4em;">第1题</h1></td>
+						<td style="text-align: right;color: white;font-weight: 500;font-size: 1.5em;">还有<span style="color: green;">4</span>题</td>
+					</tr>
+					<tr>
+						<td style="color: white;font-size: 1.4em;text-align: left;">拉开架式要读书，摊开一桌子书等学习用具，看了一半却觉得没意思，于是翻了了几页后想起了别的事，放下这一摊子就走；下面那种情况最符合你？</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div style="padding-top: 20px; width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv2()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">A</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">意志如铁</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv2()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">B</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">有自制力</span>
+						</td>
+					</tr>
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv2()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">C</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">没长性</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv2()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">D</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">见异思迁</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!--第三页-->
+		<div id="dv3" style="width:100%;height: 100%;">
+			<div style="width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr>
+						<td style="text-align: left;">
+							<h1 style="color: white;font-size: 4em;">第2题</h1></td>
+						<td style="text-align: right;color: white;font-weight: 500;font-size: 1.5em;">还有<span style="color: green;">3</span>题</td>
+					</tr>
+					<tr>
+						<td style="color: white;font-size: 1.4em;text-align: left;">打算要每天早起跑步锻炼和早读，可是不但每天都要早起，不能赖床，天气也越来越冷了。下面那种情况最符合你？</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div style="padding-top: 20px; width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv3()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">A</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">早睡早起</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv3()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">B</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">偷个懒</span>
+						</td>
+					</tr>
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv3()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">C</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">起床困难户</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv3()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">D</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">赖床精</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!--第四页-->
+		<div id="dv4" style="width:100%;height: 100%;">
+			<div style="width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr>
+						<td style="text-align: left;">
+							<h1 style="color: white;font-size: 4em;">第3题</h1></td>
+						<td style="text-align: right;color: white;font-weight: 500;font-size: 1.5em;">还有<span style="color: green;">2</span>题</td>
+					</tr>
+					<tr>
+						<td style="color: white;font-size: 1.4em;text-align: left;">运动会上，参加长跑落后人家两圈了，继续跑还是放弃？你属于：</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div style="padding-top: 20px; width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv4()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">A</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">意志力超群</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv4()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">B</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">有点点动摇</span>
+						</td>
+					</tr>
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv4()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">C</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">意志力薄弱</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv4()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">D</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">放弃放弃</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!--第五页-->
+		<div id="dv5" style="width:100%;height: 100%;">
+			<div style="width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr>
+						<td style="text-align: left;">
+							<h1 style="color: white;font-size: 4em;">第4题</h1></td>
+						<td style="text-align: right;color: white;font-weight: 500;font-size: 1.5em;">还有<span style="color: green;">1</span>题</td>
+					</tr>
+					<tr>
+						<td style="color: white;font-size: 1.4em;text-align: left;">情绪影响，有没有过因为别人的指指点点或者异样的目光，一时愤怒而终止了一直在做的事？</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div style="padding-top: 20px; width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv5()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">A</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">脑洞大开</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv5()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">B</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">会有办法的</span>
+						</td>
+					</tr>
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv5()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">C</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">时间都去哪了</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv5()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">D</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">都是你的错</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!--第六页-->
+		<div id="dv6" style="width:100%;height: 100%;">
+			<div style="width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr>
+						<td style="text-align: left;">
+							<h1 style="color: white;font-size: 4em;">第5题</h1></td>
+						<td style="text-align: right;color: white;font-weight: 500;font-size: 1.5em;">最后一题</td>
+					</tr>
+					<tr>
+						<td style="color: white;font-size: 1.4em;text-align: left;">周一到周五，能否忍住不去玩手机、IPAD等电子用品？</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div style="padding-top: 20px; width: 1000px;height: 150px;background:rgba(17,40,62,0.5);border-radius: 20px;margin: auto;margin-top: 120px;">
+				<table style="width: 900px;margin: auto;">
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv6()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">A</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">电子绝缘体</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv6()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">B</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">喜欢电子产品</span>
+						</td>
+					</tr>
+					<tr id="d2_t2">
+						<td style="text-align: left;">
+
+							<p onclick="bv6()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">C</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">有瘾</span>
+						</td>
+						<td style="text-align: left;">
+
+							<p onclick="bv6()" style="cursor: pointer;border: 0px solid green;width:50px;height: 50px;border-radius: 25px;display: inline-block;text-align: center;font-size: 2em;color: white;font-weight: 500;line-height: 50px;">D</p>
+							<span style="color: white;font-weight: 500;font-size: 1.5em;">玩物丧志</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!---->
+		<div id="xx1" style="width: 100%;background-color: green;">
+			<div style="width:1200px;margin: auto;background-color: green;">
+				<div style="height: 720px;width:180px;float: left;padding-top: 350px;">
+					<img src="image/image3/matchCourse/bj1.jpg" />
+				</div>
+				<div style=" float: left; width: 780px;height: 720px;margin: auto;display: inline-block;margin-top: 75px;">
+					<div style="width: 770px;height: 180px;margin: auto;background: white;text-align: center;padding-top: 10px;border-radius: 10px;margin-bottom: 50px;">
+						<h2 style="color: green;">认知层面</h2>
+						<p style="font-size: 1.3em; width: 670px;height: 42px;margin: auto;background: white;text-align: center;color: black;line-height: 20px;margin-bottom: 10px;">
+							认知层面，用于测量学生对于知识相关概念的直接认识，达到明白“是什么”的要求， 不需要进行概念转换和高级理解性质推导，属于识记性质内容。
+						</p>
+						<button style="font-size: 1.3em; display: inline-block; width: 120px;height: 40px;background: orange;text-align: center;color: white;border-radius: 5px;border: 1px solid orange;outline: none;">
+						开始测试
+					</button>
+
+					</div>
+					<div style="width: 770px;height: 180px;margin: auto;background: white;text-align: center;padding-top: 10px;border-radius: 10px;margin-bottom: 50px;">
+						<h2 style="color: green;">认知层面</h2>
+						<p style="font-size: 1.3em; width: 670px;height: 42px;margin: auto;background: white;text-align: center;color: black;line-height: 20px;margin-bottom: 10px;">
+							认知层面，用于测量学生对于知识相关概念的直接认识，达到明白“是什么”的要求， 不需要进行概念转换和高级理解性质推导，属于识记性质内容。
+						</p>
+						<button style="font-size: 1.3em; display: inline-block; width: 120px;height: 40px;background: orange;text-align: center;color: white;border-radius: 5px;border: 1px solid orange;outline: none;">
+						开始测试
+					</button>
+
+					</div>
+					<div style="width: 770px;height: 180px;margin: auto;background: white;text-align: center;padding-top: 10px;border-radius: 10px;margin-bottom: 50px;">
+						<h2 style="color: green;">认知层面</h2>
+						<p style="font-size: 1.3em; width: 670px;height: 42px;margin: auto;background: white;text-align: center;color: black;line-height: 20px;margin-bottom: 10px;">
+							认知层面，用于测量学生对于知识相关概念的直接认识，达到明白“是什么”的要求， 不需要进行概念转换和高级理解性质推导，属于识记性质内容。
+						</p>
+						<button style="font-size: 1.3em; display: inline-block; width: 120px;height: 40px;background: orange;text-align: center;color: white;border-radius: 5px;border: 1px solid orange;outline: none;">
+						开始测试
+					</button>
+					</div>
+				</div>
+				<div style="height: 100%;float: left;height: 720px;width:210px;padding-top: 350px;">
+					<img src="image/image3/matchCourse/bj2.jpg" />
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function match_span() {
+				var div = document.getElementById("dd");
+				div.style.display = "none";
+			}
+
+			function bb() {
+				var div = document.getElementById("d1");
+				var div2 = document.getElementById("xx1");
+				div.style.display = "none";
+				div2.style.display = "block";
+				document.body.style.background="#167845";
+				console.log("11")
+			}
+			function cc() {
+				var div = document.getElementById("d7");
+				var div2 = document.getElementById("xx1");
+				div.style.display = "none";
+				div2.style.display = "block";
+				document.body.style.background="#167845";
+				console.log("11")
+			}
+
+
+			function aa() {
+				var div = document.getElementById("dd");
+				div.style.display = "block";
+			}
+
+			function b1() {
+				var d1 = document.getElementById("d1");
+				var d2 = document.getElementById("d2");
+				d1.style.display = "none";
+				d2.style.display = "block";
+			}
+
+			function bv1() {
+				var d1 = document.getElementById("d1");
+				var d2 = document.getElementById("dv2");
+				d1.style.display = "none";
+				d2.style.display = "block";
+			}
+
+			function bv1s() {
+				var d1 = document.getElementById("d1");
+				var d2 = document.getElementById("dv2s");
+				d1.style.display = "none";
+				d2.style.display = "block";
+			}
+
+			function b2() {
+				var d3 = document.getElementById("d3");
+				var d2 = document.getElementById("d2");
+				d2.style.display = "none";
+				d3.style.display = "block";
+			}
+
+			function bv2() {
+				var d3 = document.getElementById("dv3");
+				var d2 = document.getElementById("dv2");
+				d2.style.display = "none";
+				d3.style.display = "block";
+			}
+
+			function bv2s() {
+				var d3 = document.getElementById("dv3s");
+				var d2 = document.getElementById("dv2s");
+				d2.style.display = "none";
+				d3.style.display = "block";
+			}
+
+			function b3() {
+				var d3 = document.getElementById("d3");
+				var d4 = document.getElementById("d4");
+				d3.style.display = "none";
+				d4.style.display = "block";
+			}
+
+			function b4() {
+				var d4 = document.getElementById("d4");
+				var d5 = document.getElementById("d5");
+				d4.style.display = "none";
+				d5.style.display = "block";
+			}
+
+			function b5() {
+				var d5 = document.getElementById("d5");
+				var d6 = document.getElementById("d6");
+				d5.style.display = "none";
+				d6.style.display = "block";
+			}
+
+			function b6() {
+				var d6 = document.getElementById("d6");
+				var d7 = document.getElementById("d7");
+				d6.style.display = "none";
+				d7.style.display = "block";
+			}
+
+			function bv3() {
+				var d3 = document.getElementById("dv3");
+				var d4 = document.getElementById("dv4");
+				d3.style.display = "none";
+				d4.style.display = "block";
+			}
+
+			function bv4() {
+				var d4 = document.getElementById("dv4");
+				var d5 = document.getElementById("dv5");
+				d4.style.display = "none";
+				d5.style.display = "block";
+			}
+
+			function bv5() {
+				var d5 = document.getElementById("dv5");
+				var d6 = document.getElementById("dv6");
+				d5.style.display = "none";
+				d6.style.display = "block";
+			}
+
+			function bv6() {
+				var d6 = document.getElementById("dv6");
+				var d7 = document.getElementById("d7");
+				d6.style.display = "none";
+				d7.style.display = "block";
+			}
+
+			function bv3s() {
+				var d3 = document.getElementById("dv3s");
+				var d4 = document.getElementById("dv4s");
+				d3.style.display = "none";
+				d4.style.display = "block";
+			}
+
+			function bv4s() {
+				var d4 = document.getElementById("dv4s");
+				var d5 = document.getElementById("dv5s");
+				d4.style.display = "none";
+				d5.style.display = "block";
+			}
+
+			function bv5s() {
+				var d5 = document.getElementById("dv5s");
+				var d6 = document.getElementById("dv6s");
+				d5.style.display = "none";
+				d6.style.display = "block";
+			}
+
+			function bv6s() {
+				var d6 = document.getElementById("dv6s");
+				var d7 = document.getElementById("d7");
+				d6.style.display = "none";
+				d7.style.display = "block";
+
+			}
+		</script>
+	</body>
+
+</html>

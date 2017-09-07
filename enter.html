@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<title>fullPage全屏滚动时差切换效果（兼容IE7及以上版本）</title>
+		<link rel="stylesheet" href="css/jquery.fullPage.css">
+		<link rel="stylesheet" href="css/enter.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/jquery-ui-1.10.3.min.js"></script>
+		<script src="js/jquery.fullPage.min.js"></script>
+	</head>
+
+	<body>
+		
+
+		<!--代码部分begin-->
+		<ul id="menu">
+			<li data-menuanchor="page1" class="active">
+				<a href="#page1">1</a>
+			</li>
+			<li data-menuanchor="page2">
+				<a href="#page2">2</a>
+			</li>
+			<li data-menuanchor="page3">
+				<a href="#page3">3</a>
+			</li>
+			<li data-menuanchor="page4">
+				<a href="#page4">4</a>
+			</li>
+			<!--<li data-menuanchor="page5"><a href="#page5">5</a></li>-->
+		</ul>
+
+		<div class="section s1">
+			<div class="s1_d1">
+				<img src="image/image3/enter/mc-logo.png" />
+			</div>
+			<a href="matchTeacher.html">
+				<div class="s1_d2"></div>
+			</a>
+			<a href="matchCourse.html">
+				<div class="s1_d3"></div>
+			</a>
+			<div style="width:50px;margin: auto;">
+				<a href="#page2">
+				<img src="image/image3/enter/next.png"/>
+				</a>
+			</div>
+		</div>
+		<div class="section s2">
+			<div class="s2_d1">
+				快速匹配精英名师
+			</div>
+			<div class="s2_d2">
+				根据学生用户的个人需求，平台通过大数据分析测算精推荐最匹配的老师，找老师更省时省力 
+				。我们精挑细选、严格认证来自全国重点实验学校和一流培训机构老师，为您提供一对一精英教学。
+			</div>
+			<a href="matchTeacher.html">
+				<div class="s2_d3"></div>
+			</a>
+			<div style="width:50px;margin: auto;margin-bottom: 50px;">
+				<a href="#page3">
+				<img src="image/image3/enter/next.png"/>
+				</a>
+			</div>
+		</div>
+		</div>
+		<div class="section s3">
+			<div class="s3_d1">
+				知识与潜能测评系统
+			</div>
+			<div class="s3_d2">
+				全新体验的知识与潜能测评系统——智能答题、智能分析和智能规划。
+				从测评到诊断报告，学习和配课建议，全程采用科学的设计和逻辑，精准到位，体现智能的特点。
+			</div>
+			<a href="matchCourse.html">
+				<div class="s3_d3"></div>
+			</a>
+			<div style="width:100px;margin: auto;">
+				<a href="#page4">
+				<img src="image/image3/enter/next.png"/>
+				</a>
+			</div>
+		</div>
+		<div class="section s4">
+			<div style="width: 100%;height: 100%;">
+				<div style="position: relative;left:90%;top: 90%;">
+					<a href="#page1"><img src="image/image3/enter/goTop-1.png"/></a>
+				</div>
+			</div>
+			
+		</div>
+		<!--<div class="section s5"></div>-->
+
+		<!--<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>-->
+
+		<script>
+			$(function() {
+				$.fn.fullpage({
+					slidesColor: ['#009999', '#CC6600', 'rgb(240,240,240)', '#66CC66'],
+					anchors: ['page1', 'page2', 'page3', 'page4'],
+					menu: '#menu'
+				});
+			});
+		</script>
+		<!--代码部分end-->
+
+	</body>
+
+</html>

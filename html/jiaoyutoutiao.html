@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>教育头条_教育资讯_学习方法_学习技巧-三好网超级在线一对一！</title>
+	<script type="text/javascript" src = "../js/jquery-1.11.3.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/eduHeadlines.css">
+	<script type="text/javascript" src = "../js/eduHeadlines.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<!--第一导航条-->
+	<nav>
+		<ul class="nav-ul">
+			<li><img src="../image/image1/wechat.png"><a href="#" style="margin-top:-10px;">微信矩阵群</a></li>
+			<li><img src="../image/image1/mobile.png"><a href="#" id="mobileApp">手机学习APP <img src="../image/image1/pointDown.png"></a><img src="../image/image1/app_ewm.png" id="app"></li>
+			<li><img src="../image/image1/telephone.png"><a href="#" >客服：4000-176-333</a><span>|</span><a href="#" id="permitA">办学许可证 <img src="../image/image1/pointDown.png"></a>
+				<ul id="ulPermit">
+					<li><a href="#">办学许可证：111010873931661</a></li>
+					<li><a href="#">电信与信息服务业务经营许可证：京ICP证150105号</a></li>
+					<li><a href="#">京ICP备14035240号-2</a></li>
+					<li><a href="#">京公网安备11010802016334号</a></li>
+				</ul>
+			</li>
+			<li style="margin-left:70px;" class="right"><input type="button" name="" value="登录" class="btn1"><input type="button" name="" value="注册" class="btn1"></li>
+			<li class="right"><a href="#">个人中心</a></li>
+			<li class="right"><span>|</span></li>
+			<li class="right"><a href="#">学习计划</a></li>
+			<li class="right"><span>|</span></li>
+			<li class="right"><a href="#">我的课表</a></li>
+			<li class="right"><span>|</span></li>
+			<li class="right"><a href="#">新版网站首页</a></li>
+		</ul>
+	</nav>
+	<!--第二导航条-->
+	<div style="width:100%;height:100px;">
+	<div id="nav2" >
+		<img src="../image/image1/logo.png">
+		<img src="../image/image1/logo.gif" class="logo2">
+		<button id="btnLocation">全国 <span>|</span><span>▼</span></button>
+		<form>	
+			<input type="text" name="" placeholder="请输入您要搜索的课程或老师姓名" id="searchText">
+			<button id="btnSearch">搜索</button>
+			<ul id="ulSearch">
+				<li><a href="#"><div class="icons" style="background: rgb(245,14,133);">1</div><div class="items">数学</div></a></li>
+				<li><a href="#"><div class="icons" style="background: rgb(252,188,75);">2</div><div class="items">语文</div></a></li>
+				<li><a href="#"><div class="icons" style="background: rgb(161,217,88);">3</div><div class="items">英语</div></a></li>
+				<li><a href="#"><div class="icons">4</div><div class="items">物理</div></a></li>
+				<li><a href="#"><div class="icons">5</div><div class="items">初中</div></a></li>
+				<li><a href="#"><div class="icons">6</div><div class="items">高中</div></a></li>
+				<li><a href="#"><div class="icons">7</div><div class="items">小学</div></a></li>
+				<li><a href="#"><div class="icons">8</div><div class="items">化学</div></a></li>
+				<li><a href="#"><div class="icons">9</div><div class="items">高一</div></a></li>
+				<li><a href="#"><div class="icons">10</div><div class="items">历史</div></a></li>
+			</ul>
+		</form>
+		<a href="#" class="logos"><img src="../image/image1/zhifudanbao.png"><span>支付担保</span></a>
+		<a href="#" class="logos"><img src="../image/image1/suishituikuan.png"><span>随时退款</span></a>
+		<a href="#" class="logos"><img src="../image/image1/guanfangrenzheng.png"><span>官方认证</span></a>
+	</div>
+	</div>
+	
+	<!--选择地址界面-->
+	<div id="selArea">
+		<form style="margin:auto;background:white;width:1200px;height:376px;border:1px solid rgb(213,213,213);margin-top:180px;">
+			<table id="selTable" cellpadding="0" cellspacing="0" >
+				<tr style="border-bottom: rgb(213,213,213);overflow:hidden;"><td><span>按省份选择：</span></td><td><select style="border:1px solid rgb(213,213,213);width:100px;height:25px;margin-top:0px;"><option selected="selected">全国</option></select></td><td><input type="button" name="" value="确定"  id="btnSure" class="btn "></td><td colspan="10"></td></td></tr>
+				<tr><td><span>热门分站：</span></td><td><a href="#">全国</a></td><td><a href="#">北京市</a></td><td><a href="#">辽宁省</a></td><td><a href="#">湖南省</a></td><td><a href="#">四川省</a></td><td><a href="#">陕西省</a></td></tr>
+				<tr><td><span>已开通省份：</span></td><td><a href="#">全国</a></td><td><a href="#">北京市</a></td><td><a href="#">辽宁省</a></td><td><a href="#">湖南省</a></td><td><a href="#">四川省</a></td><td><a href="#">陕西省</a></td><td><a href="#">山西省</a></td><td><a href="#">上海市</a></td><td><a href="#">天津市</a></td><td><a href="#">广东市</a></td><td><a href="#">重庆市</a></td><td><a href="#">河北省</a></td></tr>
+				<tr><td><a href="#"><span></span></a></td><td><a href="#">内蒙古</a></td><td><a href="#">山东省</a></td><td><a href="#">浙江省</a></td><td><a href="#">江苏省</a></td><td><a href="#">河南省</a></td><td><a href="#">湖北省</a></td><td><a href="#">江西省</a></td><td><a href="#">福建省</a></td><td><a href="#">安徽省</a></td><td><a href="#">黑龙江省</a></td><td><a href="#">吉林省</a></td></tr>
+				<tr><td><a href="#"><span></span></a></td><td><a href="#">广西省</a></td><td><a href="#">海南省</a></td><td><a href="#">贵州省</a></td><td><a href="#">云南省</a></td><td><a href="#">西藏</a></td><td><a href="#">甘肃省</a></td><td><a href="#">青海省</a></td><td><a href="#">宁夏</a></td><td><a href="#">新疆</a></td></tr>
+				<tfoot><td style="background:white;"><a href="#"><span></span></a></td><td colspan="12" style="color:black;font-size:13px;background:white;text-align:left;padding-left:35px;">如果没有您要找的分站，请拨打 <span style="color:rgb(30,200,0);">4000-176-333</span>联系我们，该省份开通分站后，我们会在第一时间联系您</td></td></tfoot>
+			</table>
+		</form>
+	</div>
+	<!--第三导航条-->
+	<div style="width:100%;height:45px;background:rgb(64,178,43);text-align:center;position: absolute;" id="navParent">
+		<div id="navBar">
+			<dl class="eduHeadlines">
+				<dt style="padding-right: 20px;"><a href="#" class="choice" "><span>教育头条</span></a></dt>
+			</dl>
+			<dl class="hotSpots">
+				<dt><a href="#" class="choice">热点</a></dt>
+				<dd>
+					<div><a id="hotSpot" class="choice">热点</a></div>
+				</dd>
+			</dl>
+			<dl class="highSchool">
+				<dt><a href="#" class="choice">高中阶段</a></dt>
+				<dd>
+					<div><a class="choice">高中语文</a></div>
+					<div><a class="choice">高中数学</a></div>
+					<div><a class="choice" >高中英语</a></div>
+					<div><a class="choice" >高中物理</a></div>
+					<div><a class="choice" >高中化学</a></div>
+					<div><a class="choice" >高中生物</a></div>
+					<div><a class="choice" >高中历史</a></div>
+					<div><a class="choice" >高中地理</a></div>
+					<div><a class="choice" >高中政治</a></div>
+					<div><a class="choice" >高考作文</a></div>
+					<div style="text-align:center;"><a class="choice">高考</a></div>
+					<div style="text-align:center;"><a class="choice">艺考</a></div>
+				</dd>
+			</dl>
+			<dl class="middleSchool">
+				<dt><a class="choice">初中阶段</a></dt>
+				<dd>
+					<div><a class="choice" >初中语文</a></div>
+					<div><a class="choice" >初中数学</a></div>
+					<div><a class="choice" >初中英语</a></div>
+					<div><a class="choice" >初中物理</a></div>
+					<div><a class="choice" >初中化学</a></div>
+					<div><a class="choice" >中考</a></div>
+				</dd>
+			</dl>
+			<dl class="primary">
+				<dt><a class="choice">小学阶段</a></dt>
+				<dd>
+					<div><a class="choice">小学语文</a></div>
+					<div><a class="choice">小学数学</a></div>
+					<div><a class="choice">小学英语</a></div>
+					<div><a class="choice">小升初</a></div>
+				</dd>
+			</dl>
+			<dl class="parentMeeting">
+				<dt><a class="choice">家长会</a></dt>
+				<dd>
+					<div><a class="choice">家长会</a></div>
+					<div><a class="choice">初中生家长</a></div>
+					<div><a class="choice">高中生家长</a></div>
+				</dd>
+			</dl>
+			<dl class="teacherHelp">
+				<dt><a class="choice">教师帮</a></dt>
+				<dd><div><a class="choice">教师帮</a></div></dd>
+			</dl>
+		</div>
+		
+	</div>
+	<div style="width:100%;height:225px;background-color:rgba(50,155,33,0.9);" class="dlBelow">
+	</div>
+	<!--主题部分-->
+	<section>
+		<div style="margin: auto;width: 1200px;height: 2551px;">
+			<!-- 左部分分页 -->
+			<div id="leftSection">
+				<div id="bar">
+					<h5><a href="#" style="margin-right: 10px;">三好网</a></h5><span>&gt;</span><h5><a href="#" style="margin-left: 10px;">教育头条</a></h5>
+				</div>
+				<div id="headlines">
+					<div style="background: white;width: 850px;height: 2470px;margin: auto;"> 
+						<ul class="ulHeadlines">
+							<li>
+								<button class="mark"></button>
+								<a href="eduHeaderlines.html"><nobr><h4 class="title"></nobr></h4></a>
+								<p class="navContent"></p>
+								<img  class="logoSmall" src=""/><a href="#"><span class="smallTitle"  style="  left: 15px;"></span></a>
+								<img src="" class="clock"/><span class="date"></span>
+								<img src="" class="imgRight"/>
+								<a href="#" class="shareA"><img src="../image/image1/share.png" class="share"/><span style="margin-top: 2px;width: 45px;height: 25px;margin-left: -10px;">分享</span></a>
+								<div class="list-line-right"></div><div class="list-line-left"></div>
+							</li>
+							<li>
+								<button class="mark"></button>
+								<a href="eduHeaderlines.html"><nobr><h4 class="title"></nobr></h4></a>
+								<p class="navContent"></p>
+								<img  class="logoSmall" src="" /><a href="#"><span class="smallTitle"  style="  left: 15px;"></span></a>
+								<img src="" class="clock"/><span class="date"></span>
+								<img src="" class="imgRight"/>
+								<a href="#" class="shareA"><img src="../image/image1/share.png" class="share"/><span style="margin-top: 2px;width: 45px;height: 25px;margin-left: -10px;">分享</span></a>
+								<div class="list-line-right"></div><div class="list-line-left"></div>
+							</li>
+							<li>
+								<button class="mark"></button>
+								<a href="eduHeaderlines.html"><nobr><h4 class="title"></nobr></h4></a>
+								<p class="navContent"></p>
+								<img  class="logoSmall" src="" /><a href="#"><span class="smallTitle"  style="  left: 15px;"></span></a>
+								<img src="" class="clock"/><span class="date"></span>
+								<img src="" class="imgRight"/>
+								<a href="#" class="shareA"><img src="../image/image1/share.png" class="share"/><span style="margin-top: 2px;width: 45px;height: 25px;margin-left: -10px;">分享</span></a>
+								<div class="list-line-right"></div><div class="list-line-left"></div>
+							</li>
+							<li>
+								<button class="mark"></button>
+								<a href="eduHeaderlines.html"><nobr><h4 class="title"></nobr></h4></a>
+								<p class="navContent"></p>
+								<img  class="logoSmall" src="" /><a href="#"><span class="smallTitle"  style="  left: 15px;"></span></a>
+								<img src="" class="clock"/><span class="date"></span>
+								<img src="" class="imgRight"/>
+								<a href="#" class="shareA"><img src="../image/image1/share.png" class="share"/><span style="margin-top: 2px;width: 45px;height: 25px;margin-left: -10px;">分享</span></a>
+								<div class="list-line-right"></div><div class="list-line-left"></div>
+							</li>
+							<li>
+								<button class="mark"></button>
+								<a href="eduHeaderlines.html"><nobr><h4 class="title"></nobr></h4></a>
+								<p class="navContent"></p>
+								<img  class="logoSmall" src="" /><a href="#"><span class="smallTitle"  style="  left: 15px;"></span></a>
+								<img src="" class="clock"/><span class="date"></span>
+								<img src="" class="imgRight"/>
+								<a href="#" class="shareA"><img src="../image/image1/share.png" class="share"/><span style="margin-top: 2px;width: 45px;height: 25px;margin-left: -10px;">分享</span></a>
+								<div class="list-line-right"></div><div class="list-line-left"></div>
+							</li>
+							<li>
+								<button class="mark"></button>
+								<a href="eduHeaderlines.html"><nobr><h4 class="title"></nobr></h4></a>
+								<p class="navContent"></p>
+								<img  class="logoSmall" src="" /><a href="#"><span class="smallTitle"  style="  left: 15px;"></span></a>
+								<img src="" class="clock"/><span class="date"></span>
+								<img src="" class="imgRight"/>
+								<a href="#" class="shareA"><img src="../image/image1/share.png" class="share"/><span style="margin-top: 2px;width: 45px;height: 25px;margin-left: -10px;">分享</span></a>
+								<div class="list-line-right"></div><div class="list-line-left"></div>
+							</li>
+							<li>
+								<button class="mark"></button>
+								<a href="eduHeaderlines.html"><nobr><h4 class="title"></nobr></h4></a>
+								<p class="navContent"></p>
+								<img  class="logoSmall" src="" /><a href="#"><span class="smallTitle"  style="  left: 15px;"></span></a>
+								<img src="" class="clock"/><span class="date"></span>
+								<img src="" class="imgRight"/>
+								<a href="#" class="shareA"><img src="../image/image1/share.png" class="share"/><span style="margin-top: 2px;width: 45px;height: 25px;margin-left: -10px;">分享</span></a>
+								<div class="list-line-right"></div><div class="list-line-left"></div>
+							</li>
+							<li>
+								<button class="mark"></button>
+								<a href="eduHeaderlines.html"><nobr><h4 class="title"></nobr></h4></a>
+								<p class="navContent"></p>
+								<img  class="logoSmall" src="" /><a href="#"><span class="smallTitle"  style="  left: 15px;"></span></a>
+								<img src="" class="clock"/><span class="date"></span>
+								<img src="" class="imgRight"/>
+								<a href="#" class="shareA"><img src="../image/image1/share.png" class="share"/><span style="margin-top: 2px;width: 45px;height: 25px;margin-left: -10px;">分享</span></a>
+								<div class="list-line-right"></div><div class="list-line-left"></div>
+							</li>
+							<li>
+								<button class="mark"></button>
+								<a href="eduHeaderlines.html"><nobr><h4 class="title"></nobr></h4></a>
+								<p class="navContent"></p>
+								<img  class="logoSmall" src="" /><a href="#"><span class="smallTitle"  style="  left: 15px;"></span></a>
+								<img src="" class="clock"/><span class="date"></span>
+								<img src="" class="imgRight"/>
+								<a href="#" class="shareA"><img src="../image/image1/share.png" class="share"/><span style="margin-top: 2px;width: 45px;height: 25px;margin-left: -10px;">分享</span></a>
+								<div class="list-line-right"></div><div class="list-line-left"></div>
+							</li>
+							<li>
+								<button class="mark"></button>
+								<a href="eduHeaderlines.html"><nobr><h4 class="title"></nobr></h4></a>
+								<p class="navContent"></p>
+								<img  class="logoSmall" src="" /><a href="#"><span class="smallTitle"  style="  left: 15px;"></span></a>
+								<img src="" class="clock"/><span class="date"></span>
+								<img src="" class="imgRight"/>
+								<a href="#" class="shareA"><img src="../image/image1/share.png" class="share"/><span style="margin-top: 2px;width: 45px;height: 25px;margin-left: -10px;">分享</span></a>
+								<div class="list-line-right"></div><div class="list-line-left"></div>
+							</li>
+							<li>
+								<button class="mark"></button>
+								<a href="eduHeaderlines.html"><nobr><h4 class="title"></nobr></h4></a>
+								<p class="navContent"></p>
+								<img  class="logoSmall" src="" /><a href="#"><span class="smallTitle"  style="  left: 15px;"></span></a>
+								<img src="" class="clock"/><span class="date"></span>
+								<img src="" class="imgRight"/>
+								<a href="#" class="shareA"><img src="../image/image1/share.png" class="share"/><span style="margin-top: 2px;width: 45px;height: 25px;margin-left: -10px;">分享</span></a>
+								<div class="list-line-right"></div><div class="list-line-left"></div>
+							</li>
+							<li>
+								<button class="mark"></button>
+								<a href="eduHeaderlines.html"><nobr><h4 class="title"></nobr></h4></a>
+								<p class="navContent"></p>
+								<img  class="logoSmall" src="" /><a href="#"><span class="smallTitle"  style="  left: 15px;"></span></a>
+								<img src="" class="clock"/><span class="date"></span>
+								<img src="" class="imgRight"/>
+								<a href="#" class="shareA"><img src="../image/image1/share.png" class="share"/><span style="margin-top: 2px;width: 45px;height: 25px;margin-left: -10px;">分享</span></a>
+								<div class="list-line-right"></div><div class="list-line-left"></div>
+							</li>
+							<li>
+								<button class="mark"></button>
+								<a href="eduHeaderlines.html"><nobr><h4 class="title"></nobr></h4></a>
+								<p class="navContent"></p>
+								<img  class="logoSmall" src="" /><a href="#"><span class="smallTitle"  style="  left: 15px;"></span></a>
+								<img src="" class="clock"/><span class="date"></span>
+								<img src="" class="imgRight"/>
+								<a href="#" class="shareA"><img src="../image/image1/share.png" class="share"/><span style="margin-top: 2px;width: 45px;height: 25px;margin-left: -10px;">分享</span></a>
+								<div class="list-line-right"></div><div class="list-line-left"></div>
+							</li>
+							<li>
+								<button class="mark"></button>
+								<a href="eduHeaderlines.html"><nobr><h4 class="title"></nobr></h4></a>
+								<p class="navContent"></p>
+								<img  class="logoSmall" src="" /><a href="#"><span class="smallTitle"  style="  left: 15px;"></span></a>
+								<img src="" class="clock"/><span class="date"></span>
+								<img src="" class="imgRight"/>
+								<a href="#" class="shareA"><img src="../image/image1/share.png" class="share"/><span style="margin-top: 2px;width: 45px;height: 25px;margin-left: -10px;">分享</span></a>
+								<div class="list-line-right"></div><div class="list-line-left"></div>
+							</li>
+							<li>
+								<button class="mark"></button>
+								<a href="eduHeaderlines.html"><nobr><h4 class="title"></nobr></h4></a>
+								<p class="navContent"></p>
+								<img  class="logoSmall" src="" /><a href="#"><span class="smallTitle"  style="  left: 15px;"></span></a>
+								<img src="" class="clock"/><span class="date"></span>
+								<img src="" class="imgRight"/>
+								<a href="#" class="shareA"><img src="../image/image1/share.png" class="share"/><span style="margin-top: 2px;width: 45px;height: 25px;margin-left: -10px;">分享</span></a>
+								<div class="list-line-right"></div><div class="list-line-left"></div>
+							</li>
+							
+						</ul>
+						
+						<div id="pagination" style="margin-top:10px;"></div>
+  						
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="rightSection1">
+				<a href="#"><img src="../image/image1/app.jpg" style="width: 242px; height: 352px;margin: auto;margin-top: 31px;"/></a>
+			</div>	
+			
+			<div class="rightSection2">
+				<h2>推荐公众号</h2>
+				<hr style="border: 1px solid rgb(69,176,53);width: 240px;margin: auto;" />
+				<div class="carousel slide" id = "car" style="width:240px;height:170px;margin:0 auto;margin-top:20px;background: url(../image/image1/gzh-bg.jpg) no-repeat;text-align:center;">
+					<div class = "carousel-inner" style="height:200px;width: 240px;">
+						<div class = "item active">
+							<img src="../image/image1/20160415182256269.jpg" style="height:111px;width: 111px;">
+							<h6>三好网</h6>
+							<h6>ID：sanhao-sheng</h6>
+						</div>
+						<div class = "item">
+							<img src="../image/image1/20160415182350821.jpg" style="height:111px;width: 111px;">
+							<h6>家长会</h6>
+							<h6>ID：jzh010</h6>
+						</div>
+						<div class = "item">
+							<img src="../image/image1/20160415182439206.jpg" style="height:111px;width: 111px;">
+							<h6>教师帮</h6>
+							<h6>ID：jiaoshi-bang</h6>
+						</div>
+						<div class = "item">
+							<img src="../image/image1/20160415182552912.jpg" style="height:111px;width: 111px;">
+							<h6>高中数学</h6>
+							<h6>ID：gaozhongshu-xue</h6>
+						</div>
+						<div class = "item">
+							<img src="../image/image1/20160415182642614.jpg" style="height:111px;width: 111px;">
+							<h6>高中物理</h6>
+							<h6>ID：gaozhongwuli100</h6>
+						</div>
+						<div class = "item">
+							<img src="../image/image1/20160415182736121.jpg" style="height:111px;width: 111px;">
+							<h6>高中生物</h6>
+							<h6>ID：gaozhongshengwu100</h6>
+						</div>
+						<div class = "item">
+							<img src="../image/image1/20160415182846639.jpg" style="height:111px;width: 111px;">
+							<h6>高中化学</h6>
+							<h6>ID：gaozhonghuaxue100</h6>
+						</div>
+						<div class = "item">
+							<img src="../image/image1/20160415182946633.jpg" style="height:111px;width: 111px;">
+							<h6>高中历史</h6>
+							<h6>ID：gzls11</h6>
+						</div>
+						<div class = "item">
+							<img src="../image/image1/20160415183049540.jpg" style="height:111px;width: 111px;">
+							<h6>高中英语</h6>
+							<h6>ID：gaozhong-yingyu</h6>
+						</div>
+						<div class = "item">
+							<img src="../image/image1/20160415183134859.jpg" style="height:111px;width: 111px;">
+							<h6>高中语文</h6>
+							<h6>ID：gzyw11</h6>
+						</div>
+						<div class = "item">
+							<img src="../image/image1/20160415183241972.jpg" style="height:111px;width: 111px;">
+							<h6>高中地理</h6>
+							<h6>ID：gzdl100</h6>
+						</div>
+						<div class = "item">
+							<img src="../image/image1/20160415183351212.jpg" style="height:111px;width: 111px;">
+							<h6>高中政治</h6>
+							<h6>ID：gzzz010</h6>
+						</div>
+						<div class = "item">
+							<img src="../image/image1/20160415183453490.jpg" style="height:111px;width: 111px;">
+							<h6>高考作文</h6>
+							<h6>ID：gaokaozuowen100</h6>
+						</div>
+						<div class = "item">
+							<img src="../image/image1/20160415183555376.jpg" style="height:111px;width: 111px;">
+							<h6>初中数学</h6>
+							<h6>ID：chuzhong-shuxue</h6>
+						</div>
+						<div class = "item">
+							<img src="../image/image1/20160415183652673.jpg" style="height:111px;width: 111px;">
+							<h6>初中化学</h6>
+							<h6>ID：chuzhonghuaxue100</h6>
+						</div>
+						<div class = "item">
+							<img src="../image/image1/20160415183757942.jpg" style="height:111px;width: 111px;">
+							<h6>初中物理</h6>
+							<h6>ID：chuzhongwuli100</h6>
+						</div>
+						<div class = "item">
+							<img src="../image/image1/20160415183845927.jpg" style="height:111px;width: 111px;">
+							<h6>初中语文</h6>
+							<h6>ID：chuzhongyuwen100</h6>
+						</div>
+						<div class = "item">
+							<img src="../image/image1/20160415183951141.jpg" style="height:111px;width: 111px;">
+							<h6>初中英语</h6>
+							<h6>ID：chuzhong-yingyu</h6>
+						</div>
+						<div class = "item">
+							<img src="../image/image1/2016041518405589.jpg" style="height:111px;width: 111px;">
+							<h6>高考</h6>
+							<h6>ID：gaokao010</h6>
+						</div>
+						<div class = "item">
+							<img src="../image/image1/20160506183141867.jpg" style="height:111px;width: 111px;">
+							<h6>中考</h6>
+							<h6>ID：zhongkao010</h6>
+						</div>
+					</div>
+					<a href="#car"  class = "carousel-control left" data-slide="prev"  style="background:transparent;margin-top:44px;margin-left:-3px;color:red;">
+						<span>&lt;</span>
+					</a>
+					<a href="#car" class = "carousel-control right" data-slide="next" style="background:transparent;margin-top:44px;margin-right:-3px;color:red;">
+						<span>&gt;</span>
+					</a>		
+				</div>
+			</div>
+			<div class="rightSection3">
+				<h4>热门老师</h4>
+				<hr  style="border: 1px solid rgb(238,238,238);width: 240px;margin: auto;"/>
+				<div class="hotTeacher1">
+					<img src="../image/image1/pic.jpg" alt="" class="pic"/>
+					<p class="firstP"><a href="teacherList.html">唐文武</a> <span>数学</span><span>奥数</span></p>
+					<p class="secondP">教师教龄：5年<br>累计学时：392小时<br>学生人数：94人</p>
+				</div>
+				<div class="hotTeacher2">
+					<img src="../image/image1/pic(1).jpg" alt="" class="pic"/>
+					<p class="firstP"><a href="teacherList.html">刘老师</a> <span>数学</span><span>奥数</span></p>
+					<p class="secondP">教师教龄：3年<br>累计学时：392小时<br>学生人数：94人</p>
+				</div>
+				<div class="hotTeacher3">
+					<img src="../image/image1/pic(2).jpg" alt="" class="pic"/>
+					<p class="firstP"><a href="teacherList.html">李然</a> <span>数学</span><span>奥数</span></p>
+					<p class="secondP">教师教龄：3年<br>累计学时：392小时<br>学生人数：94人</p>
+				</div>
+				<div class="hotTeacher4">
+					<img src="../image/image1/pic(3).jpg" alt="" class="pic"/>
+					<p class="firstP"><a href="teacherList.html">于老师</a> <span>数学</span><span>奥数</span></p>
+					<p class="secondP">教师教龄：3年<br>累计学时：392小时<br>学生人数：94人</p>
+				</div>
+				<div class="hotTeacher5">
+					<img src="../image/image1/pic(4).jpg" alt="" class="pic"/>
+					<p class="firstP"><a href="teacherList.html">修艳平</a> <span>数学</span><span>奥数</span></p>
+					<p class="secondP">教师教龄：3年<br>累计学时：392小时<br>学生人数：94人</p>
+				</div>
+				<div class="hotTeacher6">
+					<img src="../image/image1/pic(5).jpg" alt="" class="pic"/>
+					<p class="firstP"><a href="teacherList.html">王老师</a> <span>数学</span><span>奥数</span></p>
+					<p class="secondP">教师教龄：3年<br>累计学时：392小时<br>学生人数：94人</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 页尾部分 -->
+	<div style="width:100%;height:460px;background:rgb(38,38,38);" id="foot">
+		<!--网站导航-->
+		<div class="footP"><div style="margin:auto;width:1200px;height:42px;padding-top:7px;text-align:center;"><a class="aToggle" style="text-decoration: none;color: rgb(181,181,181);">网站导航<span class="spanToggle">∧</span></a></div></div>
+		<!--页尾第二部分-->
+		<div id="footer1">
+			<div id="footer1Content">
+				<a href="#">
+					<img src="../image/image1/logo_footer.png" alt="" class="logo_footer"/>
+				</a>
+				<dl class="dl1">
+					<dt><span>帮助中心</span></dt><br />
+					<dd><a href="#">平台攻略</a></dd>
+					<dd><a href="#">教师入驻</a></dd>
+					<dd><a href="#">教师帮助</a></dd>
+					<dd><a href="#">学生帮助</a></dd>
+					<dd><a href="#">注册登录</a></dd>
+					<dd><a href="#">平台保障</a></dd>
+				</dl>
+				<dl class="dl2">
+					<dt>服务支持</dt><br />
+					<dd><a href="#">支付方式</a></dd>
+					<dd><a href="#">意见反馈</a></dd>
+				</dl>
+				<dl  class="dl3">
+					<dt>关于三好</dt><br />
+					<dd><a href="#">公司简介</a></dd>
+					<dd><a href="#">加入我们</a></dd>
+					<dd><a href="#">联系我们</a></dd>
+					<dd><a href="#">网站条款</a></dd>
+					<dd><a href="#">新闻报道</a></dd>
+					<dd><a href="#">活动公告</a></dd>
+					<dd><a href="#">友情链接</a></dd>
+					<dd><a href="#">网站地图</a></dd>
+				</dl>
+				<dl  class="dl4">
+					<dt>关注我们</dt><br />
+					<dd><a href="#">官方微信</a></dd>
+					<dd><a href="#">新浪微博</a></dd>
+				</dl>
+				<div style="width:270px;height: 175px;float: right;margin-top: 40px;margin-left: -32px;">
+					<p class="tel">4000-176-333</p>
+					<p class="workTime">周一至周日 7X24小时在线客服</p>
+					
+					<div class="d1" style="border:1px solid gray;width: 30px;height: 30px;border-radius: 15px;background: url(../image/image1/a.png);background-repeat: no-repeat;float: left;background-position: 2px;margin-left: 40px;" onclick="fun2()">
+						<div style="border:0px solid white;width: 30px;height: 30px;padding: 0px;border-radius: 15px;"></div>
+					</div>
+					<div class="d1" style="border:1px solid gray;width: 30px;height: 30px;padding: 0px;border-radius: 15px;background: url(../image/image1/b.png);background-repeat: no-repeat;float: left;background-position: 2px;" onclick="fun5()">
+						<div style="border:0px solid white;width: 30px;height: 30px;padding: 0px;border-radius: 15px;"></div>
+					</div>
+					<div class="d1" style="border:1px solid gray;width: 30px;height: 30px;padding: 0px;border-radius: 15px;background: url(../image/image1/c.png);background-repeat: no-repeat;float: left;background-position: 2px;" onclick="fun6()">
+						<div style="border:0px solid white;width: 30px;height: 30px;padding: 0px;border-radius: 15px;"></div>
+					</div>
+					<div class="d1" style="border:1px solid gray;width: 30px;height: 30px;padding: 0px;border-radius: 15px;background: url(../image/image1/d.png);background-repeat: no-repeat;float: left;background-position: 2px;" onclick="fun7()">
+						<div style="border:0px solid white;width: 30px;height: 30px;padding: 0px;border-radius: 15px;"></div>
+					</div>
+					<div class="d1" style="border:1px solid gray;width: 30px;height: 30px;padding: 0px;border-radius: 15px;background: url(../image/image1/e.png);background-repeat: no-repeat;float: left;background-position: 2px;" onclick="fun8()">
+						<div style="border:0px solid white;width: 30px;height: 30px;padding: 0px;border-radius: 15px;"></div>
+					</div>
+					<div class="d1" style="border:1px solid gray;width: 30px;height: 30px;padding: 0px;border-radius: 15px;background: url(../image/image1/f.png);background-repeat: no-repeat;float: left;background-position: 2px;" onclick="fun4()">
+						<div style="border:0px solid white;width: 30px;height: 30px;padding: 0px;border-radius: 15px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--点击加号出现框-->
+		<div class="dv" id="dv">
+			
+				<div class="dv-head">
+					<table style="width: 100%;">
+						<tr>
+							<td style="text-align: left;width: 160px;"><span style="color: gray;font-weight: 400;font-size: 1.2em;">分享到</span></td>
+							<td style="text-align: right;width: 160px;"><img src="../image/image1/79D702EF-70D7-4988-8E1C-867A83A187D9.png" onclick="fun1()" id="img1"/></td>
+						</tr>
+					</table>
+				</div>
+				<div class="dv-body">
+					<table style="width: 100%;background: gray;">
+						<tr>
+							<td><a href=""><img src="../image/image1/a1.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a2.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a3.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a4.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a5.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a6.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a7.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a8.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a9.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a10.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a11.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a12.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a13.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a14.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a15.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a16.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a17.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a18.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a19.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a20.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a21.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a22.png"/></a></td>
+						</tr>
+
+
+						<tr>
+							<td><a href=""><img src="../image/image1/a13.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a14.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a15.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a16.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a17.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a18.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a19.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a20.png"/></a></td>
+						</tr>
+						<tr>
+							<td><a href=""><img src="../image/image1/a21.png"/></a></td>
+							<td><a href=""><img src="../image/image1/a22.png"/></a></td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="dv-foot">
+					<a href="" style="color: gray;font-weight: 400;font-size: 1.2em;">百度分享</a>
+				</div>
+		</div>
+		<footer>
+				<div class="footerContent">
+					<p class="p1">北京三好互动教育科技有限公司版权所有 办学许可证：111010873931661 电信与信息服务业务经营许可证：京ICP证150105号 京ICP备14035240号-2 京公网安备11010802016334号<br /> sanhao.com</p>
+					<p class="p2">
+						<a href="#">
+							<img src="../image/image1/link1.jpg" alt="" />
+						</a>
+						<a href="#">
+							<img src="../image/image1/link2.jpg" alt="" />
+						</a>
+						<a href="#">
+							<img src="../image/image1/aqyz.png" alt="" />
+						</a>
+						<a href="#">
+							<img src="../image/image1/cnnic.png" alt="" />
+						</a>
+						<a href="#">
+							<img src="../image/image1/link5.jpg" alt="" />
+						</a>
+					</p>
+				</div>
+		</footer>
+	</div>
+	<!--右边栏悬浮图标-->
+	<div id="recommends">
+		<div>
+			<a href="#" class="boxParent">
+				<img src="../image/image1/qq1.png"  class="imgFloat"/>
+				<div style="width: 129px;height: 146px;position: absolute;background:rgb(28,184,225);margin-left: -139px;margin-top: -90px; font-family:'微软雅黑';display:none;">
+				<img src="../image/image1/app_ewm.png" style="margin-top:7px;margin-left:7px;width:115px;height:115px;border-radius:0px;">
+				<h5 style="margin-top:4px;margin-left:17px;color:white;">下载三好网app</h5>
+				<!--  -->
+				<div class="trian2"></div>
+			</div>
+
+			</a>
+		</div>
+		<div>
+			<a href="#" class="boxParent">
+			<img src="../image/image1/weixin.png" class="imgFloat" />
+			<div style="width: 129px;height: 146px;position: absolute;background:rgb(37,184,150);margin-left: -139px;margin-top: -90px; font-family:'微软雅黑';display:none;">
+				<img src="../image/image1/weichatPublic.png" style="margin-top:7px;margin-left:7px;width:115px;height:115px;border-radius:0px;">
+				<h5 style="margin-top:4px;margin-left:21px;color:white;">三好网订阅号</h5>
+				<!--  -->
+				<div class="trian2"></div>
+			</div>
+			</a>
+		</div>
+		<div>
+			<a href="#" class ="boxParent">
+			<img src="../image/image1/mobile (2).png" class="imgFloat"/>
+			<div style="width: 129px;height: 176px;position: absolute;background:rgb(64,178,43);margin-left:-139px;margin-top: -90px; font-family:'微软雅黑';display:none;">
+				<button  style="background:white;color:rgb(64,178,43);border-radius:50%;width:15px;height:15px;border:none;float:right;text-align:center;padding-top: -15px; margin-top:2px;" class = "btnDismiss"><span style="margin-top:-10px;position:absolute;margin-left:-4px">x</span></button>
+				<input type="text" placeholder="请输入您手机号" name="" style="width:115px;height:31px;border:1px solid white;background:rgb(64,178,43);outline:none;color:white;margin-left:7px;padding-left:4px;" class="placeHolder">
+				<input type="button" value="立即免费呼叫" name="" style="margin-top:10px;width:115px;height:31px;background:white;color:rgb(64,178,43);text-align:center;border:none;margin-left:7px;border-radius:3px;">
+
+				<!--  -->
+				<div class="trian1"></div>
+			</div></a>
+			
+		</div>
+		<div><a href="#" class="recommendNote"><img src="../image/image1/note.png" class="imgFloat"/></a></div>
+		<div><a href="javascript:scroll(0,0)" mce_href="javascript:scroll(0,0)"><img src="../image/image1/top.png" class="imgFloat"/></a>
+		</div>
+	</div>
+	<!--右边栏note点击弹出反馈模态框-->
+	<div class = "modal fade" id="myModal" style="margin-left: -20%;margin-top: 5%;">
+		<div class = "modal-dialog">
+			<div   class = "modal-content" style="border-radius:10px;background: rgb(247,250,252);font-family: '微软雅黑';width: 800px;height: 450px;">
+				<div class="modal-header" style="text-align: center;border: none;">
+					<hr style="width: 100%;color: rgb(155,155,155);z-index: 1;margin-top: 80px;position: absolute;margin-left: -15px;"/>
+					<img src="../image/image1/logo_modal.png" style="background-color:rgb(0,0,0);width: 140px;height: 100px;margin: auto;z-index: 1000;"/>
+					<h3 class="modal-title" style="font-size: 18px;font-weight: bolder;color: rgb(90,90,90);" >您的宝贵意见与建议是我们进步的源泉！</h3>
+				</div>
+				<div class="modal-body">
+					<form action="" style="width: 700px;text-align: left;">
+						<h6 style="color: rgb(70,156,53);margin-left:10px;font-size: 13px;margin-top: -10px;">反馈类型</h6>
+						<div class="feedbackType feedbackType1"><span style="padding-top: 7px;position: absolute;margin-left: -30px;">使用疑问</span><img src="../image/image1/icon-right.png" class="arrow1"/></div>
+						<div class="feedbackType"><span style="padding-top: 7px;position: absolute;margin-left: -30px;">服务体验</span><img src="../image/image1/icon-right.png" class="arrow1"/><!--<span>√</span>--></div>
+						<div class="feedbackType"><span style="padding-top: 7px;position: absolute;margin-left: -30px;">视觉设计</span><img src="../image/image1/icon-right.png" class="arrow1"/></div>
+						<div class="feedbackType"><span style="padding-top: 7px;position: absolute;margin-left: -30px;">产品功能</span><img src="../image/image1/icon-right.png" class="arrow1"/></div>
+						<input type="textarea" style="margin-left:11px;width: 689px;height: 80px;margin-top: 20px;border: 1px solid rgb(185,185,185);" placeholder="说出您要解决的问题详细描述，或期待我们改进的地方......"/>
+						<input type="text" placeholder="填写您的联系方式（手机号/微信号/QQ号）,有助于我们解决问题（资料绝对保密）" style="margin-left:11px;width: 689px;height: 40px;margin-top: 20px;border: 1px solid rgb(185,185,185);"/>
+						<input type="button" value="提交反馈" style="margin-top:3px;margin-left:11px;width: 200px;height: 35px;background: rgb(70,176,53);border-radius:5px;color: white;" />
+						<input type="button" value="取消反馈" style="margin-top:3px;margin-left:11px;width: 200px;height: 35px;background: rgb(160,160,160);border-radius:5px;color: white;font-weight: normal;font-size: 20px;"  class="close" data-dismiss="modal"/>
+					</form>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--点击shareA中微信图标出现二维码-->
+	<div id="qrCode">
+		<h6>分享到微信或朋友圈</h6>
+		<button class="qrBtn"><img src="../image/image1/closeSelf.png"/></button>
+		<img src="../image/image1/ewm.png" class="qrcode"/>
+		<p>打开微信，点击底部的“发现”，<br> 使用“扫一扫”即可将网页分享至朋友圈。</p>
+	</div>
+	<script src="../js/index.js"></script>
+	<style type="text/css" src = "../css/eduHeadlines.css"></style>
+</body>
+</html>

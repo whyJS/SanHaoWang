@@ -1,0 +1,372 @@
+/*导航*/
+.div_nav{
+	width: 100%;
+	height: 60px;
+	background: rgba(0,0,0,0.6);
+	position: fixed;
+	min-width: 600px;
+	padding-right: 20px;
+	z-index: 4;
+	
+}
+.app-logo{
+	margin-top: 10px;
+	margin-left: 20px;
+	
+}
+.logo{
+	color: white;	
+}
+.div-nav-logo-a{
+	text-align: right;
+	margin-bottom: 50px;
+/*	border: 1px solid yellow;*/
+	margin-top: 15px;
+}
+.div-nav-logo-image{
+	float: left;
+}
+/*导航 字体*/
+.logo-a{
+	color: white;
+	font-weight: 500;
+}
+
+/*super online*/
+.super{
+	background: black;
+	width: 100%;
+	height: 1000px;
+	padding-top: 100px;
+	position: fixed;
+	z-index: 1;
+}
+.super-table{
+	
+	width: 100%;
+	/*border: 1px solid yellow;*/
+}
+.super-span-x{
+	color: white;
+	font-size: 1.8em;
+	display: inline-block;
+}
+.super-span-wire-x{
+	height: 3px;
+	display: block;
+	/*background: green;*/
+
+}
+.super-span-wire-s{
+	height: 3px;
+	display: block;
+	background: green;
+}
+.super-span-s{
+	color: green;
+	font-size: 1.8em;
+	display: inline-block;
+}
+ .super-table-td-x{
+ 	border-right: 1px solid gray;
+ 	text-align: right;
+ 	padding-right: 10px;
+ }
+ .super-table-td-s{
+ 	padding-left: 10px;
+ }
+ .super-table-td-s:hover .super-span-wire-s{
+ 	background: green;
+ 	cursor: pointer;
+ }
+ .super-table-td-s:hover .super-span-s{
+ 	color: green;
+ 	cursor: pointer;
+ } 
+ .super-table-td-x:hover .super-span-wire-x{
+ 	background: green;
+ 	cursor: pointer;
+ }
+ .super-table-td-x:hover .super-span-x{
+ 	color: green;
+ 	cursor: pointer;
+ } 
+ 
+/*下载  安卓 ios*/
+.code{
+	/*border: 1px solid yellow;*/
+	margin: auto;
+	width: 400px;
+	margin-top: 100px;
+}
+button{
+	width: 250px;
+	height: 40px;
+	border-radius: 20px;
+	background: rgba(255,255,255,0);
+	outline: none;
+	font-size: 1.3em;
+}
+.btn1{
+	border: 2px solid green;
+	color: green;	
+}
+.btn2{
+	border: 2px solid dodgerblue;
+	color: dodgerblue;
+}
+.btn1:hover{
+	background: green;
+	color: white;
+}
+.btn2:hover{
+	background:dodgerblue ;
+	color: white;
+}
+
+/*家长旁听*/
+.table-td1 td{
+	font-size: 1.5em;
+	font-weight: 500;
+	padding-top: 20px;
+}
+.table-td2 td{
+	font-size: 1.5em;
+	font-weight: 500;
+	color: gray;
+	padding-bottom: 80px;
+	
+}
+/*三好手机客户端*/
+.div-client{
+	background: rgb(248,249,248);
+	width: 100%;
+	height: 780px;
+	padding-top: 60px;
+}
+.div-client-1{
+	float: left;
+	/*border: 1px solid black;*/
+
+}
+.div-client-2{
+/*	border: 1px solid black;*/
+	margin-left: 600px;
+}
+.div-client-img1{
+	margin-top: 120px;
+	margin-left: 100px;
+}
+.div-client-img2{
+	margin-top: 50px;
+	margin-left: 160px;
+}
+.div-client-1 p{
+	margin-left: 60px;
+	margin-top: 30px;
+	font-size: 1.3em;
+	font-weight: 500;
+	line-height: 32px;
+}
+/*空白*/
+.div-white{
+	width: 100%;
+	background: white;
+	height: 200px;
+}
+/*直播互动技术*/
+.div-zhibo{
+	background-image: url(../image/image3/hot_bg.png);
+	color: white;
+	text-align: center;
+	padding-top: 100px;
+		padding-bottom: 100px;
+}
+.div-zhibo div{
+	margin: auto;
+	width:600px;
+	height: 200px;
+	border: 0px solid white;
+	font-size: 1.6em;
+	line-height: 32px;
+	text-align: left;
+	text-indent: 2em;
+	margin-top: 50px;
+
+}
+.div-zhibo button{
+	color: white;
+	font-weight: 100;
+	width: 300px;
+	border:2px solid white;
+	outline: none;
+}
+.div-zhibo button:hover{
+	background: white;
+	color: black;
+}
+/*5000名师*/
+.div-teacher{
+	margin: auto;
+	text-align: center;
+	min-width: ;
+	margin-top: 100px;
+	width: 900px;
+	border: 0px solid black;
+	padding-bottom: 80px;
+}
+.div-teacher div{
+	margin-top: 50px;
+	margin-left: 20px;
+		border: 0px solid black;
+	float: left;
+	
+}
+.div-teacher div p{
+	margin-top: 50px;
+	color: gray;
+	font-size: 1.2em;
+
+}
+/*诚邀下载体验*/
+.div-chengyao{
+	background-image: url(../image/image3/coffee.png);
+	color: white;
+	text-align: center;
+	padding-top: 100px;
+		padding-bottom: 100px;
+}
+.div-chengyao div{
+	margin: auto;
+	width:750px;
+	height: 200px;
+	border: 0px solid white;
+	font-size: 1.6em;
+	line-height: 32px;
+	text-align: left;
+	text-indent: 2em;
+	margin-top: 50px;
+
+}
+/*尾部*/
+.div-foot{
+	background: rgb(32,32,32);
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+.foot-table{
+	margin: auto;
+	width: 1200px;
+	border-collapse: collapse;
+	margin-bottom: 100px;
+}
+.foot-table a{
+	color: gray;
+	font-size: 1.3em;
+	text-decoration: none;
+}
+.foot-table a:hover{
+	color: green;
+}
+.foot-table span{
+	color: white;
+	font-size: 1.4em;
+}
+.foot-table td{
+	padding-right: 10px;
+	padding-left: 30px;
+	border-right: 1px solid gray;
+}
+.foot-span{
+	color: white;
+	font-size: 40px;
+	font-weight: 600;
+}
+hr{
+	font-weight: lighter;
+}
+
+.d1{
+	margin-right: 10px;
+}
+.d1 div:hover{
+	background: gray;
+	opacity: 0.5;
+}
+
+/*弹出框*/
+.dv{
+	border: 5px solid gray;
+	width: 300px;
+	height: 320px;
+	z-index: 5;
+	position: fixed;
+	top: 260px;
+	left: 600px;
+	display: none;
+	
+}
+.dv-head{
+	border: 0px solid gray;
+	height: 30px;
+	width: 100%;
+	background: rgb(245,245,245);
+}
+.dv-body{
+	border: 0px solid gray;
+	height: 250px;
+	width: 100%;	
+	overflow: auto;
+}
+.dv-foot{
+	border: 0px solid gray;
+	height: 30px;
+	width: 100%;
+	background: rgb(245,245,245);
+	text-align: right;
+	padding-top: 5px;
+	
+}
+.dv-body td{
+	border: 0px solid black;
+	width: 50%;
+	height: 25px;
+}
+.dv-body img{
+	width: 100%;
+	height: 100%;
+}
+.dv-body img:hover{
+	background: darkgray;
+	opacity: 0.8;
+}
+/*二维码*/
+.dv1{
+	text-align: right;
+	padding: 5px;
+	border: 0px solid gray;
+	width: 300px;
+	height: 420px;
+	z-index: 6;
+	position: fixed;
+	top: 260px;
+	left: 600px;
+	background: white;
+	display: none;
+
+}
+.dv1 a{
+	cursor: pointer;
+}
+
+.dv2{
+cursor: pointer;	
+text-align: right;
+	z-index: 6;
+	position: fixed;
+	top: 350px;
+	right: 0px;
+	background: white;
+/*	display: none;*/
+}
+

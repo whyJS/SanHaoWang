@@ -1,0 +1,409 @@
+/*头部*/
+#head1{
+	height: 95px;
+	width: 100%;
+	background: rgb(62,176,52);
+	/*border:1px solid black;*/
+	min-width: 1200px;
+}
+#head11{
+	/*display: inline;*/
+	height: 95px;
+	width: 1200px;
+	/*vertical-align: center;*/
+	/*border:1px solid black;*/
+	margin: 0 auto;
+}
+#head11 img{
+	float: left;
+	text-align: center;
+	margin-top: 20px;
+}
+.c1,.c2,.c3,.c4{
+	float: left;
+	height: 95px;
+	width: 120px;
+	/*border:1px solid black;*/
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	line-height: 95px;
+}
+.c1:hover{
+	background: rgb(46,148,38);
+}
+.c2:hover{
+	background: rgb(46,148,38);
+}
+.c3:hover{
+	background: rgb(46,148,38);
+}
+.c4:hover{
+	background: rgb(46,148,38);
+}
+#div2{
+	height: 95px;
+	width: 500px;
+	/*border:1px solid white;*/
+	float: right;
+	margin-right: 0px;
+}
+#div22{
+	height: 45px;
+	width: 300px;
+	margin-top: 25px;
+	border-radius: 22.5px;
+	border: 1px solid white;
+	margin-left: 60px;
+}
+#div221{
+	float: left;
+	height: 43px;
+	width: 43px;
+	color: white;
+	background: rgb(103,193,97);
+    border-radius: 22.5px  0 0 22.5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#div2 input{
+	float: left;
+	height: 43px;
+	width: 205px;
+	background:  rgb(62,176,52);
+	border: none;
+	outline: none;
+}
+#div222{
+	float: right;
+	height: 43px;
+	width: 43px;
+	background: rgb(103,193,97);
+    border-radius:   0  22.5px  22.5px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#div222 img{
+	position: relative;
+	top: -13px;
+}
+#div33{
+	float: left;
+	margin-left: 360px;
+	margin-top: -95px;
+	height: 95px;
+	width: 140px;
+	outline: none;
+	/*border:1px solid black;*/
+}
+#button1{
+	float: left;
+	margin-left: 30px;
+	position: relative;
+	top: 25px;
+	height: 40px;
+	width: 40px;
+	border:1px solid white;
+	border-radius: 20px;
+	color: rgb(62,176,52);
+	margin-top: 27.5px;
+	font-size: 10px;
+	outline: none;
+	cursor: pointer;
+}
+#button1 a{
+	color: rgb(62,176,52);
+	text-decoration: blink;
+
+}
+#button2{
+	float: left;
+	margin-left: 20px;
+	position: relative;
+	top: 25px;
+	height: 40px;
+	width: 40px;
+	border:1px solid white;
+	border-radius: 20px;
+	color: rgb(62,176,52);
+	margin-top: 27.5px;
+	font-size: 10px;
+	outline: none;
+	cursor: pointer;
+}
+#bankuai{
+	height: 145px;
+	width: 120px;
+	list-style: none;
+	display: none;
+	background: rgb(62,176,52);
+	border: 1px solid rgb(46,148,38);
+	position: relative;
+	top: -40px;
+	left: 280px;
+	line-height: 30px;
+	text-align: center;
+}
+#bankuai a{
+	color: white;
+	text-decoration: blink;
+	margin-top: 5px;
+}
+#bankuai div{
+	border-bottom: 1px solid gray;
+}
+#bankuai div:hover{
+	background: rgb(103,193,97);
+}
+#mingshi{
+	height: 145px;
+	width: 120px;
+	list-style: none;
+	display: none;
+	background: rgb(62,176,52);
+	border: 1px solid rgb(46,148,38);
+	position: relative;
+	top: -40px;
+	left: 520px;
+	/*line-height: 20px;*/
+	text-align: center;
+}
+#mingshi a{
+	color: white;
+	text-decoration: blink;
+}
+#mingshi div{
+	border-bottom: 1px solid gray;
+}
+#mingshi div:hover{
+    background: rgb(103,193,97);
+}
+#tie{
+	height: 100px;
+	width: 44px;
+	list-style: none;
+	display: none;
+	background: rgb(62,176,52);
+	border: 1px solid rgb(46,148,38);
+	position: relative;
+	top: -70px;
+	left: 760px;
+	/*line-height: 20px;*/
+	text-align: center;
+}
+#tie a{
+	color: white;
+	text-decoration: blink;
+}
+#tie div{
+	border-bottom: 1px solid gray;
+}
+#tie div:hover{
+    background: rgb(103,193,97);
+}
+
+
+#head2{
+	height: 50px;
+	width: 100%;
+	background: rgb(46,148,38);
+	min-width: 1200px;
+}
+#head22{
+    height: 50px;
+	width: 1200px;
+	/*vertical-align: center;*/
+	/*border:1px solid black;*/
+	margin: 0 auto;
+	line-height: 30px;
+	text-align: center;
+}
+.b{
+	float: left;
+	height: 30px;
+	width: 70px;
+	margin-left: 10px;
+	color: white;
+	/*background: rgb(29,200,0); */
+	margin-top: 10px;
+	border-radius: 3px;
+}
+.b:hover{
+	background: rgb(29,200,0); 
+}
+.a{ 
+	float: left;
+	width: 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+	color: rgb(46,184,38);
+}
+#re{
+	float: left;
+	margin-top: 10px;
+	height: 30px;
+	width: 110px;
+	color: white;
+	background: rgb(29,200,0);
+	border-radius: 3px;
+}
+#tie{
+	height: 100px;
+	width: 44px;
+	list-style: none;
+	display: none;
+	background: rgb(62,176,52);
+	border: 1px solid rgb(46,148,38);
+	position: relative;
+	top: -70px;
+	left: 760px;
+	/*line-height: 20px;*/
+	text-align: center;
+}
+#tie a{
+	color: white;
+	text-decoration: blink;
+}
+#tie div{
+	border-bottom: 1px solid gray;
+}
+#tie div:hover{
+    background: rgb(103,193,97);
+}
+
+
+
+
+/*body*/
+#body{
+    background: rgb(242,242,242,);
+    min-width: 1200px;
+}
+#table1 a{
+	color: gray;
+	text-decoration: blink;
+}
+#diva div{
+	border-bottom: 1px solid rgb(242,242,242);;
+	height: 50px;
+	width: 120px;
+	/*background: red;*/
+	float: left;
+	line-height: 50px;
+	text-align: center;
+}
+#table21{
+	margin-left: 40px;
+}
+#table21 a{
+	color: green;
+	text-decoration: blink;
+}
+#table22{
+	margin-left: 40px;
+}
+#table22 a{
+	color: green;
+	text-decoration: blink;
+}
+#table23{
+	margin-left: 40px;
+}
+#table23 a{
+	color: green;
+	text-decoration: blink;
+}
+#img1{
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+	margin-top: 20px;
+	margin-left: 60px;
+	float: left;
+}
+#table3{
+	height: 45px;
+	width: 300px;
+	margin: 0 auto;
+
+}
+#table3 img{
+	height: 25px;
+	width: 25px;
+	border-radius: 12.5px;
+}
+
+/*尾部*/
+footer{
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+#foot1{
+	height: 100px;
+	width: 100%;
+	min-width: 1200px;
+	/*background: red;*/
+}
+#foot1 caption{
+	font-size: 16px;
+	float: left;
+	margin-left: 20px;
+}
+#foot1 table{
+	color: gray;
+	/*border: 1px solid black;*/
+	width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+#foot1 td{
+	height: 30px;
+	width: 170px;
+}
+#foot1 a{
+    color: gray;
+    font-size: 14px;
+    text-decoration: blink;
+}
+#foot1 a:hover{
+    color: blue;
+}
+
+
+#foot2{
+	height: 250px;
+	width: 100%;
+	background: rgb(45,50,54);
+	min-width: 1200px;
+}
+#foot2 table{
+	color: white;
+	/*border: 1px solid white;*/
+	width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+#foot2 td{
+	height: 250px;
+	/*border: 1px solid white;*/
+}
+#foot2 td a{
+	font-size: 14px;
+	color: gray;
+	text-decoration: blink;
+	line-height: 30px;
+}
+#foot2 td a:hover{
+	color: green;
+}
+
+
+
+#foot3{
+	height: 35px;
+	width: 100%;
+	background: rgb(35,40,44);
+	min-width: 1200px;
+}

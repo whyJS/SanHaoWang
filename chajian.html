@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		div {
+			float: left;
+			width: 120px;
+			height: 200px;
+			border: 1px solid black;
+			overflow: hidden;
+		}
+		
+		img {
+			position: relative;
+		}
+	</style>
+
+	<body>
+		<div onmousemove="aa()" id="aa"><img src="image/aa/1.jpg" id="aa1" /></div>
+		<div onmousemove="bb()" id="bb"><img src="image/aa/2.jpg" id="bb1" /></div>
+		<div onmousemove="cc()" id="cc"><img src="image/aa/3.jpg" id="cc1"/></div>
+		<div onmousemove="dd()" id="dd"><img src="image/aa/4.jpg" id="dd1"/></div>
+		<div onmousemove="ee()" id="ee"><img src="image/aa/5.jpg" id="ee1"/></div>
+		<script type="text/javascript">
+			function aa() {
+				var div=document.getElementsByTagName("div");
+				var img=document.getElementsByTagName("img");
+				for(var i=0;i<div.length;i++){
+					if(div[i].style.width==="300px"){
+						div[i].style.width="120px";
+						img[i].style.left="0px";
+						break;
+					}
+				}
+//				if(document.getElementById("bb").style.width==="300px"){
+//					document.getElementById("bb").style.width="120px";
+//					document.getElementById("bb1").style.left="0px";
+//				}
+//	console.log(document.getElementById("bb").style.width);
+				var aa = document.getElementById("aa")
+				aa.style.width = "300px";
+				var bb = document.getElementById("aa1")
+				bb.style.left = "-120px";
+			}
+			function bb() {
+								var div=document.getElementsByTagName("div");
+				var img=document.getElementsByTagName("img");
+				for(var i=0;i<div.length;i++){
+					if(div[i].style.width==="300px"){
+						div[i].style.width="120px";
+						img[i].style.left="0px";
+						break;
+					}
+				}
+				var aa = document.getElementById("bb")
+				aa.style.width = "300px";
+				var bb = document.getElementById("bb1")
+				bb.style.left = "-120px";
+				console.log(aa.style.width);
+				console.log(document.getElementsByTagName("div"))
+			}
+					function cc() {
+								var div=document.getElementsByTagName("div");
+				var img=document.getElementsByTagName("img");
+				for(var i=0;i<div.length;i++){
+					if(div[i].style.width==="300px"){
+						div[i].style.width="120px";
+						img[i].style.left="0px";
+						break;
+					}
+				}
+				var aa = document.getElementById("cc")
+				aa.style.width = "300px";
+				var bb = document.getElementById("cc1")
+				bb.style.left = "-120px";
+				console.log(aa.style.width);
+				console.log(document.getElementsByTagName("div"))
+			}
+							function dd() {
+								var div=document.getElementsByTagName("div");
+				var img=document.getElementsByTagName("img");
+				for(var i=0;i<div.length;i++){
+					if(div[i].style.width==="300px"){
+						div[i].style.width="120px";
+						img[i].style.left="0px";
+						break;
+					}
+				}
+				var aa = document.getElementById("dd")
+				aa.style.width = "300px";
+				var bb = document.getElementById("dd1")
+				bb.style.left = "-120px";
+				console.log(aa.style.width);
+				console.log(document.getElementsByTagName("div"))
+			}
+							
+														function ee() {
+								var div=document.getElementsByTagName("div");
+				var img=document.getElementsByTagName("img");
+				for(var i=0;i<div.length;i++){
+					if(div[i].style.width==="300px"){
+						div[i].style.width="120px";
+						img[i].style.left="0px";
+						break;
+					}
+				}
+				var aa = document.getElementById("ee")
+				aa.style.width = "300px";
+				var bb = document.getElementById("ee1")
+				bb.style.left = "-120px";
+				console.log(aa.style.width);
+				console.log(document.getElementsByTagName("div"))
+			}
+			
+			
+			
+			
+			
+		</script>
+	</body>
+
+</html>

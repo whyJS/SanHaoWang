@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<style type="text/css">
+			body {
+				background-image: url(image/matchTeacher/bg.jpg);
+			}
+			
+			p {
+				width: 170px;
+				color: white;
+				height: 40px;
+				border-radius: 20px;
+				border: 1px solid white;
+				line-height: 40px;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			p:hover {
+				background: white;
+				color: black;
+			}
+			
+			td {
+				margin-left: 50px;
+				
+			}
+		.model_div_1{
+			  border: 1px solid darkgray;
+				width: 160px;
+				height: 36px; 
+				cursor: pointer;
+				text-align: center;
+				line-height: 33px;
+				
+			}
+			.model_div{
+				border: 1px solid green;
+				background-image: url(image/matchTeacher/icon-right.png);
+				background-repeat: no-repeat;
+				background-position: 140px 0px;
+	
+
+			}
+
+			#tb1 td{
+				padding-left: 10px;
+			    height: 60px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<table style="width: 1000px;margin: auto;text-align: center;margin-top: 20%;">
+			<tr>
+				<td><img src="image/matchTeacher/icon1.png" /></td>
+				<td><img src="image/matchTeacher/icon2.png" /></td>
+				<td><img src="image/matchTeacher/icon3.png" /></td>
+			</tr>
+			<tr>
+				<td style="padding-left: 80px;padding-top: 50px;">
+					<a href="" style="text-decoration: none;font-size: 1.3em;">
+						<p>GO</p>
+					</a>
+				</td>
+				<td style="padding-left: 80px;padding-top: 50px;">
+					<a href="" style="text-decoration: none;font-size: 1.3em;">
+						<p>GO</p>
+					</a>
+				</td>
+				<td style="padding-left: 80px;padding-top: 50px;">
+					<a href="" style="text-decoration: none;font-size: 1.3em;">
+						<p>GO</p>
+					</a>
+				</td>
+
+			</tr>
+		</table>
+
+		<!--侧边栏-->
+		<div class="container" style="border: 0px solid white;position: fixed;right: 20px;width:100px;top: 300px;">
+			<div data-toggle="popover" data-html="true" title="" data-placement="left" data-content='<div style="width:130px;height:180px;"><img src="image/matchTeacher/tb.png"/><input placeholder="请输入电话号码" style="width:130px;height:30px;margin-top:10px;border:1px solid white;outline:none;" /><input type="button" value="立即免费呼叫" style="width:130px;height:30px;margin-top:10px;border:1px solid white;outline:none;color:green;background-color:white;"/></div>' style="width: 45px;height: 45px;background-image:url(image/matchTeacher/r_tips_bg-b.png);cursor: pointer;"></div>
+			<div data-toggle="popover" data-html="true" title="" data-placement="left" data-content='<div style="width:115px;height:150px;"><img src="image/matchTeacher/app_ewm.png"/><span style="color:white;font-size:1.5em;">三好订阅号</span><div>' style="width: 45px;height: 45px;background-image:url(image/matchTeacher/r_tips_bg-b.png);background-position: 0px -42px;cursor: pointer;"></div>
+			<div  data-toggle="popover" data-html="true" title="" data-placement="left" data-content='<div style="width:115px;height:150px;"><img src="image/matchTeacher/app_ewm.png"/><span style="color:white;font-size:1.2em;">下载三好APP</span><div>' style="width: 45px;height: 45px;background-image:url(image/matchTeacher/r_tips_bg-b.png);background-position: 0px -85px;cursor: pointer;"></div>
+			<div data-toggle="modal" data-target="#myModal"><div data-trigger="hover" data-toggle="popover" data-html="true" title="" data-placement="left" data-content="<span style='color:white;'>意见反馈</span>" style="width: 45px;height: 45px;background-image:url(image/matchTeacher/r_tips_bg-b.png);background-position: 0px 90px;cursor: pointer;"></div></div>
+			<a href="#" >
+				<div data-trigger="hover" data-toggle="popover" data-html="true" title="" data-placement="left" data-content="<span style='color:white;'>返回顶部</span>" style="width: 45px;height: 45px;background-image:url(image/matchTeacher/r_tips_bg-b.png);background-position: 0px 45px;cursor: pointer;"></div>
+			</a>
+		</div>
+		
+		<!--模态框-->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin-top: 200px;">
+			<div class="modal-dialog">
+				<div class="modal-content" style="background: url(image/matchTeacher/yjfk_bg.png); width: 822px;padding-top: 100px;">
+					<div class="modal-body">
+						<div style="height: 25px;color: green;position: relative;left: 580px;top:230px;font-weight: 700;">还可以输入<span id="s1">200</span>字</div>
+						<div style="text-align: center;font-size: 1.5em;font-weight:500;">您的宝贵意见与建议是我们进步的源泉！</div>
+						<div style="width:700px;border: 0px solid black;margin: auto;padding-bottom: 20px;">
+							<table id="tb1">
+								<tr>
+									<td colspan="4" style="color: green;font-size: 1.2em;font-weight: 500;">反馈类型</td>
+									
+								</tr>
+								<tr id="model_tr_div">
+									<td><div class="model_div model_div_1">使用疑问</div></td>
+									<td><div class="model_div_1">服务体验</div></td>
+								    <td><div class="model_div_1">视觉设计</div></td>
+									<td><div class="model_div_1">产品功能</div></td>
+								</tr>
+								<tr style="margin-top: 40px;">
+									<td colspan="4">
+										<textarea id="text" onkeyup="model_text()" placeholder="说出您需要解决的问题的详细描述，或期待我们改进的地方...." name="" rows="" cols="" style="width: 673px;height: 80px ;outline: none;"></textarea>
+									</td>
+									
+								</tr>
+								<tr>
+									<td colspan="4">
+										<input placeholder="请写您的联系方式（手机号/微信号/QQ号），有助于我们沟通和解决问题，请放心，资料完全保密" style="width: 673px;height: 40px ;outline: none;">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" style="text-align: center;"><button style="background: green;color: white;outline: none;width: 200px;height: 35px;border-radius: 5px;">提交反馈</button></td>
+								<td colspan="2" style="text-align: center;"><button data-dismiss="modal" style="background: darkgray;color: white;outline: none;width: 200px;height: 35px;border-radius: 5px;">取消反馈</button></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script>
+			$(function() {
+				$("[data-toggle='popover']").popover();
+			});
+			function model_text(){
+				var text=document.getElementById("text");
+				var span=document.getElementById("s1");
+				var a=200-text.value.length;
+//				console.log(a);
+				span.innerHTML= a;
+			}
+			$("#model_tr_div div").click(function(){
+				$(this).toggleClass("model_div");
+			})
+		</script>
+	</body>
+
+</html>

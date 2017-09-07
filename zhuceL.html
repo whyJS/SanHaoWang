@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登陆.三好网</title>
+		<meta name="viewport" content="width=device-width">
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			.head {
+				width: 100%;
+				height: 95px;
+			}
+			
+			.aa {
+				color: black;
+				text-decoration: none;
+			}
+			
+			.d_head_d1 {
+				width: 1200px;
+				height: 95px;
+				margin: auto;
+			}
+			/*中间*/
+			
+			.d_div {
+				width: 100%;
+				height: 600px;
+				background-image: url(image/denglu/regist-st3-bg.jpg);
+				background-position: -300px 0px;
+				padding-top: 30px;
+			}
+			
+			.d_div_d1 {
+				padding-top: 15px;
+				width: 360px;
+				height: 512px;
+				background: white;
+				
+				padding-left: 30px;
+				padding-right: 30px;
+				
+			}
+			
+			.d_div_d1_tb {
+				padding-bottom: 15px;
+				margin: auto;
+				border-collapse: collapse;
+			}
+			
+			.d_div_d1_tb_tb1 {
+				
+				color: blue;
+				font-size: 1.6em;
+				font-weight: 600;
+				padding-right: 10px;
+			}
+			
+			.d_div_d1_tb_tb2 {
+				font-size: 1em;
+				padding-left: 10px;
+			}
+			/*尾部*/
+			
+			.d_foot {
+				margin-top: 80px;
+				width: 100%;
+				height: 121px;
+			}
+			
+			.d_foot_div {
+				width: 1200px;
+				height: 40px;
+				text-align: center;
+				margin: auto;
+				border-bottom: 1px solid darkgray;
+			}
+			
+			.d_foot_div a {
+				display: inline-block;
+				padding-left: 10px;
+				padding-right: 10px;
+				text-decoration: none;
+				color: black;
+				font-size: 14px;
+			}
+			
+			a:hover {
+				color: green;
+			}
+			
+			.d_foot_p {
+				width: 1200px;
+				text-align: center;
+				margin: auto;
+				padding-top: 10px;
+				font-size: 14px;
+			}
+			
+			.d_foot_d2 {
+				width: 1200px;
+				text-align: center;
+				margin: auto;
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
+			
+			.d_foot_d2 img {
+				width: 86px;
+				height: 34px;
+			}
+		</style>
+	</head>
+
+	<body style="font-family: '微软雅黑';">
+		<header class="head">
+			<div class="d_head_d1">
+
+				<img src="image/denglu/logo.png" style="float: left;margin-right: 20px;" />
+				<h1 style="line-height: 95px;font-weight: 400;font-size: 1.6em;">欢迎登陆</h1>
+				<div style="width: 160px;height: 95px;position: relative;left: 1130px;top:-30px;font-size: 14px;">
+					已有账号，
+					<a class="aa" href="denglu.html">直接登录</a>
+				</div>
+			</div>
+		</header>
+		<div class="d_div">
+			<div class="d_div_d1">
+				<table class="d_div_d1_tb">
+					<tr>
+						
+						<td class="d_div_d1_tb_tb1">
+							老师
+							<br />
+							<span style="color: gray;font-size: 0.5em;font-weight: 300;">注册在平台授课</span>
+						</td>
+						<td class="d_div_d1_tb_tb2">
+							<img src="image/denglu/reg_teacher.png"/>
+							我是学生
+							<button onclick="zhuce()">注册</button>
+						</td>
+					</tr>
+				</table>
+				<form class="bs-example bs-example-form" role="form">
+
+					<div class="input-group c123" style="margin-top: 15px;">
+						<span class="input-group-addon" style="background: url(image/denglu/regist-icon.png);background-position: 3px 5px;background-repeat: no-repeat;border-right: 0px solid black;"></span>
+						<input type="tel" placeholder="请输入您的手机号" class="form-control c234" style="border-right: 0px solid black;border:1px solid lightgray; border-left: 0px solid black;border-right: 0px solid black;height: 40px;outline: none;box-shadow: 0px 0px 0px #9edeff;">
+						<span class="input-group-addon c345" style="background: url(image/denglu/close.png);background-repeat: no-repeat;background-position: 3px 11px;cursor: pointer;"></span>
+					</div>
+					<div class="input-group c123a" style="margin-top: 15px;">
+						<span class="input-group-addon" style="background: url(image/denglu/regist-icon.png);background-position: 3px 5px;background-repeat: no-repeat;border-right: 0px solid black;"></span>
+						<input placeholder="请输入右侧图片验证码" type="text" class="form-control c234a" style="border-right: 0px solid black;border:1px solid lightgray; border-left: 0px solid black;border-right: 0px solid black;height: 40px;outline: none;box-shadow: 0px 0px 0px #9edeff;">
+						<span class="input-group-addon" style="background:white;background-repeat: no-repeat;background-position: 3px 11px;cursor: pointer;"><img class="c345a" src="image/denglu/close.png"/>  <img  src="image/denglu/verify.jpg" style="height: 25px;padding: 0px;"/></span>
+					</div>
+					<div class="input-group c123b" style="margin-top: 15px;">
+						<span class="input-group-addon" style="background: url(image/denglu/regist-icon.png);background-position: 3px 5px;background-repeat: no-repeat;border-right: 0px solid black;"></span>
+						<input placeholder="请输入您的手机验证码" type="text" class="form-control c234b" style="border-right: 0px solid black;border:1px solid lightgray; border-left: 0px solid black;border-right: 0px solid black;height: 40px;outline: none;box-shadow: 0px 0px 0px #9edeff;">
+						<span class="input-group-addon" style="  padding: 0px; padding-left: 25px;background:white;background-repeat: no-repeat;background-position: 3px 11px;cursor: pointer;"><img class="c345b" src="image/denglu/close.png" style="position: absolute;top: 12px;right: 84px;"/><span style="background: blue;display: inline-block;height: 100%;line-height: 35px;color: white;padding-left: 5px;padding-right: 5px;">手机验证码</span></span>
+					</div>
+					<div class="input-group c123c" style="margin-top: 15px;">
+						<span class="input-group-addon" style="background: url(image/denglu/regist-icon.png);background-position: 3px 5px;background-repeat: no-repeat;border-right: 0px solid black;"></span>
+						<input placeholder="请输入您密码" type="password" class="form-control c234c" style="border-right: 0px solid black;border:1px solid lightgray; border-left: 0px solid black;border-right: 0px solid black;height: 40px;outline: none;box-shadow: 0px 0px 0px #9edeff;">
+						<span class="input-group-addon c345c" style="background: url(image/denglu/close.png);background-repeat: no-repeat;background-position: 3px 11px;cursor: pointer;"></span>
+					</div>
+					<div class="input-group c123d" style="margin-top: 15px;">
+						<span class="input-group-addon" style="background: url(image/denglu/regist-icon.png);background-position: 3px 5px;background-repeat: no-repeat;border-right: 0px solid black;"></span>
+						<input placeholder="请再次输入您的密码" type="password" class="form-control c234d" style="border-right: 0px solid black;border:1px solid lightgray; border-left: 0px solid black;border-right: 0px solid black;height: 40px;outline: none;box-shadow: 0px 0px 0px #9edeff;">
+						<span class="input-group-addon c345d" style="background: url(image/denglu/close.png);background-repeat: no-repeat;background-position: 3px 11px;cursor: pointer;"></span>
+					</div>
+					<input type="submit" value="注册" style="width: 300px;margin-top: 15px; height: 40px;border-radius: 6px;background: blue;color: white;outline: none;border: 1px solid green;"/>
+					<p style="width: 300px;margin: auto;margin-top: 10px;font-size: 0.9em;">
+						注册代表您已经阅读并同意<a href="" style="color: blue;text-decoration: none;">《入住教师合作协议》</a>
+					</p>
+					<p style="width: 300px;margin: auto;margin-top: 30px;text-align: center;">
+						已有账号，直接<a href="denglu.html" style="color: blue;">登录</a>
+					</p>
+				</form>
+
+			</div>
+		</div>
+		</div>
+		<!--尾部-->
+		<div class="d_foot">
+			<div class="d_foot_div">
+				<a href="">关于三号</a>
+				<a href="">联系我们</a>
+				<a href="">加入我们</a>
+				<a href="">网络条款</a>
+				<a href="">帮助中心</a>
+				<a href="">服务支持</a>
+				<a href="">意见反馈</a>
+				<a href="">官方微信</a>
+				<a href="">客服电话：4000-176-333</a>
+
+			</div>
+			<p class="d_foot_p">三好网版权所有 办学许可证：111010873931661电信 与信息服务业务经营许可证：京ICP证150105号 京ICP备14035240号-2 京 公网安备11010802016334号 sanhao.com
+			</p>
+			<div class="d_foot_d2">
+				<img src="image/open-course/cnnic.png" style="margin-right: 15px;margin-bottom: 0px;" />
+				<img src="image/open-course/link1.jpg" style="margin-right: 15px;" />
+				<img src="image/open-course/aqyz.png" style="margin-right: 15px;" />
+				<img src="image/open-course/link2.jpg" style="margin-right: 15px;" />
+				<img src="image/open-course/link5.jpg" style="margin-right: 15px;" />
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(".c234").focus(function() {
+				$(".c123").css({
+					"border": "2px solid green",
+					"border-radius": "6px"
+				})
+			})
+			$(".c234").focusout(function() {
+				$(".c123").css({
+					"border": "0px solid green",
+					"border-radius": "10px"
+				})
+			})
+			$(".c345").click(function() {
+				$(".c234").val("")
+			})
+			$(".c234a").focus(function() {
+				$(".c123a").css({
+					"border": "2px solid green",
+					"border-radius": "6px"
+				})
+			})
+			$(".c234a").focusout(function() {
+				$(".c123a").css({
+					"border": "0px solid green",
+					"border-radius": "10px"
+				})
+			})
+			$(".c345a").click(function() {
+				$(".c234a").val("")
+			})
+			$(".c234b").focus(function() {
+				$(".c123b").css({
+					"border": "2px solid green",
+					"border-radius": "6px"
+				})
+			})
+			$(".c234b").focusout(function() {
+				$(".c123b").css({
+					"border": "0px solid green",
+					"border-radius": "10px"
+				})
+			})
+			$(".c345b").click(function() {
+				$(".c234b").val("")
+			})
+			$(".c234c").focus(function() {
+				$(".c123c").css({
+					"border": "2px solid green",
+					"border-radius": "6px"
+				})
+			})
+			$(".c234c").focusout(function() {
+				$(".c123c").css({
+					"border": "0px solid green",
+					"border-radius": "10px"
+				})
+			})
+			$(".c345c").click(function() {
+				$(".c234c").val("")
+			})
+			$(".c234d").focus(function() {
+				$(".c123d").css({
+					"border": "2px solid green",
+					"border-radius": "6px"
+				})
+			})
+			$(".c234d").focusout(function() {
+				$(".c123d").css({
+					"border": "0px solid green",
+					"border-radius": "10px"
+				})
+			})
+			$(".c345d").click(function() {
+				$(".c234d").val("")
+			})
+			function zhuce(){
+				window.open("denglu.html")
+			}
+		</script>
+	</body>
+
+</html>
